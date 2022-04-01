@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1,
+		"title": "Gathering of Requirements",
+		"stage": "One",
+		"desc": "This is the beginning of our path of growth. As soon as we get your WordPress project specifications and schedule a meeting with your professional WordPress developer, we'll be in touch with you. The development team will work with you to ensure that the features and functionality you want for your website are included in the project scope.",
+		"thumb": "../images/service-details/wordpress/stages/1.png"
+	},
+	{
+		"id": 2,
+		"title": "Creating Wireframe",
+		"stage": "Two",
+		"desc": "A wireframe for your project will be created as soon as you give your professional WordPress developer the go-ahead to begin working on it. After receiving your input, your developer will immediately start making modifications and creating a new wireframe. Your developer will supply you with a final copy of our wireframe based on your feedback, and your project will be sent into the development process.",
+		"thumb": "../images/service-details/wordpress/stages/2.png"
+	},
+	{
+		"id": 3,
+		"title": "Designing User Interface",
+		"stage": "Three",
+		"desc": "Your specialized developer, at this point, will implement these features and functions. Your developer will work with you to implement the ideas you've provided and deliver the final design to you for your approval.",
+		"thumb": "../images/service-details/wordpress/stages/3.png"
+	},
+	{
+		"id": 4,
+		"title": "WordPress Installation",
+		"stage": "Four",
+		"desc": "After UI design has given its approval, we'll begin creating the HTML for the UI design and then integrate it into your WordPress theme following the structure specified in your UI Design. We can integrate a plugin, design a new one, or modify an existing one to meet your specific needs.",
+		"thumb": "../images/service-details/wordpress/stages/4.png"
+	},
+	{
+		"id": 5,
+		"title": "Quality Assurance",
+		"stage": "Five",
+		"desc": "Starting with functionality (links and dialogs, menus, etc.) and progressing to automated and manual framework testing is what your developer will do when development is complete. Your developer has extensive expertise with cross-browser testing with selenium, and they will do browser testing on your website.",
+		"thumb": "../images/service-details/wordpress/stages/5.png"
+	},
+	{
+		"id": 6,
+		"title": "Delivery of The Project",
+		"stage": "Six",
+		"desc": "After UI design has given its approval, we'll begin creating the HTML for the UI design and then integrate it into your WordPress theme following the structure specified in your UI Design. We can integrate a plugin, design a new one, or modify an existing one to meet your specific needs.",
+		"thumb": "../images/service-details/wordpress/stages/6.png"
+	},
+	{
+		"id": 7,
+		"title": "Support",
+		"stage": "Seven",
+		"desc": "To meet your website's ever-expanding needs, you can request us for third-party integrations as well. You can rely on our team of WordPress experts to provide you with ongoing assistance. Experts at CreativePeoples use the most up-to-date and practical solutions. Also, our professional WordPress developers keep up to date on the most cutting-edge features to make a website stand out and do its job better. As a bonus, they provide you with all the technical assistance you'll need to get up and running with your new site. For additional information, please get in touch with us.",
+		"thumb": "../images/service-details/wordpress/stages/7.png"
+	}
+]

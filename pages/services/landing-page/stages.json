@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"title": "Analysis",
+		"stage": "One",
+		"desc": "Send us your specifications, and we'll come back to you with a proposal for a creative landing page based on rule-based optimized targeting, active targeting, or even social targeting. </br> If you want to improve your current landing pages into high-converting landing pages, our landing page expert gathers all the necessary data.",
+		"thumb": "../images/service-details/landing/stages/1.png"
+	},
+	{
+		"id": 2,
+		"title": "Design",
+		"stage": "Two",
+		"desc": "Your website design specialist will present you with a layout based on your brand and clients for your approval.",
+		"thumb": "../images/service-details/landing/stages/2.png"
+	},
+	{
+		"id": 3,
+		"title": "Development",
+		"stage": "Three",
+		"desc": "Finally, CreativePeoples will transform your approved landing page design into HTML utilizing W3C and WYSIWYG standards, load time, mobile responsiveness, and SEO optimization, as well. In the Landing Page Development process, you will acquire a beautiful HTML design for your landing page. </br> CreativePeoples deals with enterprises of various sizes, from small startups to Leading multinational corporations. We are committed to building long-term relationships with all of our clients, and we are always here if they need us. For additional information, please get in touch with us.",
+		"thumb": "../images/service-details/landing/stages/3.png"
+	}
+]

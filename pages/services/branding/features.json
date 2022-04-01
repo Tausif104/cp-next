@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"img": "../images/service-details/branding/feature-icons/1.png",
+		"title": "Tell us a little bit about yourself and your company",
+		"desc": "Begin the design process by providing your company's name and tagline in the designated fields. Let us know what you do and what color you like."
+	},
+	{
+		"id": 2,
+		"img": "../images/service-details/branding/feature-icons/2.png",
+		"title": "Pick the logo you like most",
+		"desc": "It's time to have some fun! Using the expertise of our skilled team, we can create an infinite number of versions. These logos are made just for you and only for you."
+	},
+	{
+		"id": 3,
+		"img": "../images/service-details/branding/feature-icons/3.png",
+		"title": "Change the look and feel of your logo",
+		"desc": "You may now tweak your logo until it's precise as you want it to be. Our customized, high-quality logo will let you feel the essence of your brand reputation make it stronger."
+	}
+]
