@@ -1,12 +1,15 @@
-import Layout from '../components/shared/Layout/Layout'
-import PageBanner from '../components/shared/PageBanner/PageBanner'
-import BlogListing from '../components/blogPage/BlogListing/BlogListing'
+import { useRouter } from 'next/router'
+import Layout from '../../../components/shared/Layout/Layout'
+import BlogListing from '../../../components/blogPage/BlogListing/BlogListing'
+import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import Link from 'next/link'
 
-const blog = ({ posts, categories }) => {
+const CategoryPostList = ({ posts, categories, allPosts }) => {
+	const router = useRouter()
+	const id = router.query
 	return (
 		<Layout>
-			<PageBanner title='Blog' />
+			<PageBanner title='Category' />
 			<div className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
 					<div className='col-lg-9'>
@@ -17,7 +20,7 @@ const blog = ({ posts, categories }) => {
 							<div className='recent-post'>
 								<h4>Recent Posts</h4>
 								<div className='recent-posts-list'>
-									{posts?.map((post) => (
+									{allPosts?.map((post) => (
 										<div
 											className='recent-post-item'
 											key={post.id}
@@ -72,17 +75,22 @@ const blog = ({ posts, categories }) => {
 	)
 }
 
-export const getServerSideProps = async () => {
-	const res = await fetch(
+export const getServerSideProps = async (context) => {
+	const allPostsRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
+	)
+	const res = await fetch(
+		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?categories=${context.params.id}&_embed`
 	)
 	const catRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/categories'
 	)
+
 	const posts = await res.json()
 	const categories = await catRes.json()
+	const allPosts = await allPostsRes.json()
 
-	return { props: { posts, categories } }
+	return { props: { posts, categories, allPosts } }
 }
 
-export default blog
+export default CategoryPostList

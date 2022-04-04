@@ -1,88 +1,56 @@
-const BlogSidebar = () => {
+import Link from 'next/link'
+
+const BlogSidebar = ({ post, posts, categories }) => {
+	const { avatar_urls, name, description } = post[0]._embedded.author[0]
+
 	return (
 		<aside>
 			<div className='profile'>
-				<img
-					className='img-fluid'
-					src='https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80'
-					alt=''
-				/>
-				<h4>About Me</h4>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Magnam, eius voluptates praesentium labore quasi tempore.
-				</p>
+				<img className='img-fluid' src={avatar_urls['96']} alt={name} />
+				<h4>About {name}</h4>
+				<p>{description}</p>
 			</div>
 
 			<div className='recent-post'>
 				<h4>Recent Posts</h4>
 				<div className='recent-posts-list'>
-					<div className='recent-post-item'>
-						<img
-							src='https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1784&q=80'
-							alt=''
-						/>
-						<div className='rp-content'>
-							<h5>Recent post title</h5>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit.
-							</p>
+					{posts?.map((post) => (
+						<div className='recent-post-item' key={post.id}>
+							<img
+								src={
+									post._embedded['wp:featuredmedia']?.['0']
+										.source_url
+								}
+								alt={post.title.rendered}
+							/>
+							<div className='rp-content'>
+								<h5>
+									<Link href={`/post/${post.slug}`}>
+										{post.title.rendered}
+									</Link>
+								</h5>
+								<div
+									dangerouslySetInnerHTML={{
+										__html: post.excerpt.rendered.slice(
+											0,
+											50
+										),
+									}}
+								></div>
+							</div>
 						</div>
-					</div>
-					<div className='recent-post-item'>
-						<img
-							src='https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1784&q=80'
-							alt=''
-						/>
-						<div className='rp-content'>
-							<h5>Recent post title</h5>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit.
-							</p>
-						</div>
-					</div>
-					<div className='recent-post-item'>
-						<img
-							src='https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1784&q=80'
-							alt=''
-						/>
-						<div className='rp-content'>
-							<h5>Recent post title</h5>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit.
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 
 			<div className='categories'>
-				<h4>Categories</h4>
+				<h4>Categories - {categories.length}</h4>
 				<ul>
-					<li>
-						<a href=''>Travel</a>
-					</li>
-					<li>
-						<a href=''>Weather</a>
-					</li>
-					<li>
-						<a href=''>Music</a>
-					</li>
-					<li>
-						<a href=''>Lifestyle</a>
-					</li>
-					<li>
-						<a href=''>Sports</a>
-					</li>
-					<li>
-						<a href=''>Movies</a>
-					</li>
-					<li>
-						<a href=''>Entertainment</a>
-					</li>
+					{categories.map((cat) => (
+						<li key={cat.id}>
+							<Link href={`/category/${cat.id}`}>{cat.name}</Link>
+						</li>
+					))}
 				</ul>
 			</div>
 		</aside>

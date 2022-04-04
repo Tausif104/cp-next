@@ -4879,3 +4879,80 @@ aside {
 .text-box p:last-child {
 	margin-bottom: 0;
 }
+
+.rp-content h5 a {
+	color: #333;
+	font-size: 16px;
+}
+
+.comment-item {
+	display: flex;
+}
+
+.comment-avatar img {
+	border-radius: 50px;
+	margin-right: 25px;
+	max-width: 55px;
+}
+
+.comment-right .comment-body p {
+	font-size: 16px;
+}
+
+.comment-item {
+	margin-bottom: 30px;
+}
+
+.comment-right p {
+	font-size: 15px;
+}
+
+.comments-list {
+	margin-top: 50px;
+}
+
+.blog-form form {
+	margin-bottom: 50px;
+}
+
+.blog-form {
+	margin-top: 50px;
+}
+
+.blog-form .form-group {
+	margin-bottom: 25px;
+}
+
+.blog-form .form-group textarea {
+	height: 150px;
+}
+
+.blog-form .form-group textarea,
+.blog-form .form-group input {
+	padding: 10px 15px;
+}
+
+.blog-form h3 {
+	margin-bottom: 25px;
+}
+
+.blog-form input[type='submit'] {
+	border: none;
+	background-color: #f26522;
+	color: #fff;
+	padding: 15px 30px;
+	transition: 0.3s;
+}
+
+.blog-form input[type='submit']:hover {
+	background-color: #1e2f3e;
+}
+
+.comments-list > h4 {
+	margin-bottom: 36px;
+	font-size: 28px;
+}
+
+.blog-details-post > img {
+	margin-bottom: 20px;
+}
