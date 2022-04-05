@@ -4,7 +4,6 @@ import NextNProgress from 'nextjs-progressbar'
 import 'react-modal-video/css/modal-video.css'
 import '../styles/animate.css'
 import '../styles/globals.css'
-import '../styles/responsive.css'
 
 function MyApp({ Component, pageProps }) {
 	return (
