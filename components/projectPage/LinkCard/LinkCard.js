@@ -5,7 +5,7 @@ const LinkCard = ({ link }) => {
 			<div className='linkcard'>
 				<img className='img-fluid' src={image} alt={sitename} />
 				<div className='link-card-content'>
-					<a target='_blank' href={url}>
+					<a target='_blank' rel='noreferrer' href={url}>
 						{sitename}
 					</a>
 				</div>

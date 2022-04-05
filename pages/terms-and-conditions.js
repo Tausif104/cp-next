@@ -1,9 +1,18 @@
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
+import Head from 'next/head'
 
 const termsAndConditions = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Terms and Conditions for CreativePeoples</title>
+				<meta
+					name='description'
+					content='Please read these terms and conditions carefully
+							before using Our Service.'
+				/>
+			</Head>
 			<PageBanner title='Terms &amp; Conditions' />
 			<section className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
@@ -33,11 +42,11 @@ const termsAndConditions = () => {
 								<li>
 									<strong>Affiliate</strong> means an entity
 									controlled by or under common control with a
-									party, where "control" means ownership of
-									50% or more of the shares, equity interest,
-									or other securities entitled to vote for the
-									election of directors or other managing
-									authority.
+									party, where &apos;control&apos; means
+									ownership of 50% or more of the shares,
+									equity interest, or other securities
+									entitled to vote for the election of
+									directors or other managing authority.
 								</li>
 								<li>
 									<strong>Country</strong> refers to
@@ -45,8 +54,9 @@ const termsAndConditions = () => {
 								</li>
 								<li>
 									<strong>Company</strong>(referred to as
-									either "the Company," "We," "Us," or "Our"
-									in this Agreement) refers to
+									either &apos;the Company,&apos;
+									&apos;We,&apos; &apos;Us,&apos; or
+									&apos;Our&apos; in this Agreement) refers to
 									CreativePeoples, House 12/1, R 4/A,
 									Dhanmondi, Dhaka.
 								</li>
@@ -58,10 +68,10 @@ const termsAndConditions = () => {
 								</li>
 								<li>
 									<strong>Terms and Conditions</strong> (also
-									referred to as "Terms") mean these Terms and
-									Conditions that form the entire agreement
-									between You and the Company regarding the
-									use of the Service.
+									referred to as &apos;Terms&apos;) mean these
+									Terms and Conditions that form the entire
+									agreement between You and the Company
+									regarding the use of the Service.
 								</li>
 								<li>
 									<strong>
@@ -121,14 +131,14 @@ const termsAndConditions = () => {
 							<p>
 								Your access to and use of the Service is also
 								conditioned on Your acceptance of and compliance
-								with the Company's Privacy Policy. Our Privacy
-								Policy describes Our policies and procedures on
-								the collection, use, and disclosure of Your
-								personal information when You use the
-								Application or the Website and tells You about
-								Your privacy rights and how the law protects
-								You. Please read Our Privacy Policy carefully
-								before using Our Service.
+								with the Company&apos;s Privacy Policy. Our
+								Privacy Policy describes Our policies and
+								procedures on the collection, use, and
+								disclosure of Your personal information when You
+								use the Application or the Website and tells You
+								about Your privacy rights and how the law
+								protects You. Please read Our Privacy Policy
+								carefully before using Our Service.
 							</p>
 						</div>
 						<div className='text-box'>
@@ -141,7 +151,7 @@ const termsAndConditions = () => {
 							<p>
 								The Company has no control over and assumes no
 								responsibility for any third-party websites or
-								services' content, privacy policies, or
+								services&apos; content, privacy policies, or
 								practices. You further acknowledge and agree
 								that the Company shall not be responsible or
 								liable, directly or indirectly, for any damage
@@ -179,7 +189,8 @@ const termsAndConditions = () => {
 								Terms and Your exclusive remedy for all of the
 								preceding shall be limited to the amount paid by
 								You through the Service or 100 USD if You
-								haven't purchased anything through the Service.
+								haven&apos;t purchased anything through the
+								Service.
 							</p>
 							<p>
 								To the maximum extent permitted by applicable
@@ -204,28 +215,32 @@ const termsAndConditions = () => {
 								implied warranties or limitation of liability
 								for incidental or consequential damages, which
 								means that some of the above limitations may not
-								apply. Each party's liability will be limited to
-								the greatest extent permitted by law in these
-								states.
+								apply. Each party&apos;s liability will be
+								limited to the greatest extent permitted by law
+								in these states.
 							</p>
 						</div>
 						<div className='text-box'>
-							<h4>"AS IS" and "AS AVAILABLE" Disclaimer</h4>
+							<h4>
+								&apos;AS IS&apos; and &apos;AS AVAILABLE&apos;
+								Disclaimer
+							</h4>
 							<p>
-								The Service is provided to You "AS IS" and "AS
-								AVAILABLE" and with all faults and defects
-								without warranty. To the maximum extent
-								permitted under applicable law, the Company, on
-								its behalf and behalf of its Affiliates and its
-								and their respective licensors and service
-								providers, expressly disclaims all warranties,
-								whether express, implied, statutory, or
-								otherwise, concerning the Service, including all
-								implied warranties of merchantability, fitness
-								for a particular purpose, title and
-								non-infringement, and warranties that may arise
-								out of a course of dealing, course of
-								performance, usage or trade practice.{' '}
+								The Service is provided to You &apos;AS IS&apos;
+								and &apos;AS AVAILABLE&apos; and with all faults
+								and defects without warranty. To the maximum
+								extent permitted under applicable law, the
+								Company, on its behalf and behalf of its
+								Affiliates and its and their respective
+								licensors and service providers, expressly
+								disclaims all warranties, whether express,
+								implied, statutory, or otherwise, concerning the
+								Service, including all implied warranties of
+								merchantability, fitness for a particular
+								purpose, title and non-infringement, and
+								warranties that may arise out of a course of
+								dealing, course of performance, usage or trade
+								practice.{' '}
 							</p>
 							<p>
 								Without limitation to the preceding, the Company
@@ -241,9 +256,9 @@ const termsAndConditions = () => {
 							</p>
 							<p>
 								Without limiting the preceding, neither the
-								Company nor any of the Company's providers makes
-								any representation or warranty of any kind,
-								express or implied:
+								Company nor any of the Company&apos;s providers
+								makes any representation or warranty of any
+								kind, express or implied:
 							</p>
 							<ol>
 								<li>
@@ -302,7 +317,7 @@ const termsAndConditions = () => {
 							<p>
 								If You are a European Union consumer, you will
 								benefit from any mandatory provisions of the
-								Country's law in which you are resident.
+								Country&apos;s law in which you are resident.
 							</p>
 						</div>
 						<div className='text-box'>
@@ -313,8 +328,9 @@ const termsAndConditions = () => {
 									You are not located in a country that is
 									subject to the United States government
 									embargo or that has been designated by the
-									United States government as a "terrorist
-									supporting" country, and
+									United States government as a
+									&apos;terrorist supporting&apos; country,
+									and
 								</li>
 								<li>
 									You are not listed on any United States
@@ -342,7 +358,7 @@ const termsAndConditions = () => {
 								Except as provided herein, the failure to
 								exercise a right or to require performance of an
 								obligation under these Terms shall not affect a
-								party's ability to exercise such right or
+								party&apos;s ability to exercise such right or
 								require such performance at any time after that,
 								nor shall the waiver of a breach constitute a
 								waiver of any subsequent breach.
@@ -364,7 +380,7 @@ const termsAndConditions = () => {
 								We reserve the right, at Our sole discretion, to
 								modify or replace these Terms at any time. If a
 								revision is material, We will make reasonable
-								efforts to provide at least 30 days' notice
+								efforts to provide at least 30 days&apos; notice
 								before any new terms. What constitutes a
 								material change will be determined at Our sole
 								discretion.

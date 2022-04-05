@@ -1,7 +1,11 @@
-import React from 'react'
+import ErrorComponent from '../components/ErrorComponent/ErrorComponent'
 
-const nothingFound = () => {
-	return <div>nothingFound</div>
+const ErrorPage = () => {
+	return (
+		<>
+			<ErrorComponent />
+		</>
+	)
 }
 
-export default nothingFound
+export default ErrorPage

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -11,6 +12,13 @@ import ResponsiveThumb from './images/responsive.png'
 const ResponsiveWeb = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Well Responsive At Any Platform</title>
+				<meta
+					name='description'
+					content='We are specialized in building responsive websites that are visually appealing and help you reach your business goals: increased leads, sales, and traffic.'
+				/>
+			</Head>
 			<PageBanner title='Responsive Website Design' />
 			<ServiceDetailsBanner
 				img={ResponsiveThumb.src}

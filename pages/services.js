@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 import ServiceBanner from '../components/servicePage/ServiceBanner/ServiceBanner'
@@ -8,6 +9,13 @@ import CtaTwo from '../components/shared/CtaTwo/CtaTwo'
 const services = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>A Full-Stack Design &amp; Development Agency</title>
+				<meta
+					name='description'
+					content='We have diversified services to support you build your own identity that will go beyond to add value to the business with a vast line of services.'
+				/>
+			</Head>
 			<PageBanner title='Our Services' />
 			<ServiceBanner />
 			<ServiceIntro />

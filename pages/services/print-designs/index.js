@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -12,6 +13,13 @@ import CpFav from './cp-fav.png'
 const PrintDesigns = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Pixel- Perfect Print Design Services</title>
+				<meta
+					name='description'
+					content='CreativePeoples designs world-class marketing materials as a print design with pixel-perfect strategies for your digital products.'
+				/>
+			</Head>
 			<PageBanner title='PRINT DESIGNS' />
 			<ServiceDetailsBanner
 				img={PrintingThumb.src}

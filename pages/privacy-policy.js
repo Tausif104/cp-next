@@ -1,9 +1,21 @@
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
+import Head from 'next/head'
 
 const PrivacyPolicy = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Privacy Policy</title>
+				<meta
+					name='description'
+					content='This Privacy Policy describes Our policies
+									and procedures on the collection, use, and
+									disclosure of Your information when You use
+									the Service and tells You about Your privacy
+									rights and how the law protects You.'
+				/>
+			</Head>
 			<PageBanner title='Privacy Policy' />
 			<section className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
@@ -52,10 +64,11 @@ const PrivacyPolicy = () => {
 									</li>
 									<li>
 										<strong>Company</strong> (referred to as
-										either "the Company", "We", "Us" or
-										"Our" in this Agreement) refers to
-										CreativePeoples, House 12/1, R 4/A,
-										Dhanmondi, Dhaka.
+										either &quot;the Company&quot;,
+										&quot;We&quot;, &quot;Us&quot; or
+										&quot;Our&quot; in this Agreement)
+										refers to CreativePeoples, House 12/1, R
+										4/A, Dhanmondi, Dhaka.
 									</li>
 									<li>
 										<strong>Cookies</strong> are small files
@@ -164,7 +177,7 @@ const PrivacyPolicy = () => {
 								</p>
 								<p>
 									Usage Data may include information such as
-									Your Device's Internet Protocol address
+									Your Device&apos;s Internet Protocol address
 									(e.g. IP address), browser type, browser
 									version, the pages of our Service that You
 									visit, the time and date of Your visit, the
@@ -176,11 +189,12 @@ const PrivacyPolicy = () => {
 									mobile device, We may collect certain
 									information automatically, including, but
 									not limited to, the type of mobile device
-									You use, Your mobile device's unique ID, the
-									IP address of Your mobile device, Your
-									mobile operating system, the type of mobile
-									Internet browser You use, unique device
-									identifiers and other diagnostic data.
+									You use, Your mobile device&apos;s unique
+									ID, the IP address of Your mobile device,
+									Your mobile operating system, the type of
+									mobile Internet browser You use, unique
+									device identifiers and other diagnostic
+									data.
 								</p>
 								<p>
 									We may also collect information that Your
@@ -213,21 +227,21 @@ const PrivacyPolicy = () => {
 									otherwise grant us access to a Third-Party
 									Social Media Service, We may collect
 									Personal data that is already associated
-									with Your Third-Party Social Media Service's
-									account, such as Your name, Your email
-									address, Your activities, or Your contact
-									list associated with that account.
+									with Your Third-Party Social Media
+									Service&apos;s account, such as Your name,
+									Your email address, Your activities, or Your
+									contact list associated with that account.
 								</p>
 								<p>
 									You may also have the option of sharing
 									additional information with the Company
 									through Your Third-Party Social Media
-									Service's account. If You choose to provide
-									such information and Personal Data, during
-									registration or otherwise, You are giving
-									the Company permission to use, share, and
-									store it in a manner consistent with this
-									Privacy Policy.
+									Service&apos;s account. If You choose to
+									provide such information and Personal Data,
+									during registration or otherwise, You are
+									giving the Company permission to use, share,
+									and store it in a manner consistent with
+									this Privacy Policy.
 								</p>
 							</div>
 							<div className='text-box'>
@@ -267,10 +281,11 @@ const PrivacyPolicy = () => {
 										browser settings as those used for
 										Browser Cookies. For more information on
 										how You can delete Flash Cookies, please
-										read "Where can I change the settings
-										for disabling, or deleting local shared
-										objects?" available at{' '}
+										read &quot;Where can I change the
+										settings for disabling, or deleting
+										local shared objects?&quot; available at{' '}
 										<a
+											rel='noreferrer'
 											target='_blank'
 											href='https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_'
 										>
@@ -293,13 +308,14 @@ const PrivacyPolicy = () => {
 									</li>
 								</ul>
 								<p>
-									Cookies can be "Persistent" or "Session"
-									Cookies. Persistent Cookies remain on Your
-									personal computer or mobile device when You
-									go offline, while Session Cookies are
-									deleted as soon as You close Your web
-									browser. Learn more about cookies: Use of
-									Cookies by Free Privacy Policy.
+									Cookies can be &quot;Persistent&quot; or
+									&quot;Session&quot; Cookies. Persistent
+									Cookies remain on Your personal computer or
+									mobile device when You go offline, while
+									Session Cookies are deleted as soon as You
+									close Your web browser. Learn more about
+									cookies: Use of Cookies by Free Privacy
+									Policy.
 								</p>
 							</div>
 							<div className='text-box'>
@@ -398,13 +414,13 @@ const PrivacyPolicy = () => {
 										contact You by email, telephone calls,
 										SMS, or other equivalent forms of
 										electronic communication, such as a
-										mobile application's push notifications
-										regarding updates or informative
-										communications related to the
-										functionalities, products, or contracted
-										services, including the security
-										updates, when necessary or reasonable
-										for their implementation.
+										mobile application&apos;s push
+										notifications regarding updates or
+										informative communications related to
+										the functionalities, products, or
+										contracted services, including the
+										security updates, when necessary or
+										reasonable for their implementation.
 									</li>
 									<li>
 										<strong>To provide You</strong> with
@@ -539,7 +555,7 @@ const PrivacyPolicy = () => {
 								<h4>Transfer of Your Personal Data</h4>
 								<p>
 									Your information, including Personal Data,
-									is processed at the Company's operating
+									is processed at the Company&apos;s operating
 									offices and in any other places where the
 									parties involved in the processing are
 									located. It means that this information may
@@ -628,7 +644,7 @@ const PrivacyPolicy = () => {
 								</p>
 							</div>
 							<div className='text-box'>
-								<h4>Children's Privacy</h4>
+								<h4>Children&apos;s Privacy</h4>
 								<p>
 									Our Service does not address anyone under
 									the age of 13. We do not knowingly collect
@@ -647,8 +663,8 @@ const PrivacyPolicy = () => {
 									If We need to rely on consent as a legal
 									basis for processing Your information and
 									Your country requires consent from a parent,
-									We may require Your parent's consent before
-									We collect and use that information.
+									We may require Your parent&apos;s consent
+									before We collect and use that information.
 								</p>
 							</div>
 							<div className='text-box'>
@@ -657,7 +673,7 @@ const PrivacyPolicy = () => {
 									Our Service may contain links to other
 									websites that are not operated by Us. If You
 									click on a third-party link, You will be
-									directed to that third party's site. We
+									directed to that third party&apos;s site. We
 									strongly advise You to review the Privacy
 									Policy of every site You visit.
 								</p>
@@ -680,8 +696,8 @@ const PrivacyPolicy = () => {
 									We will let You know via email and/or a
 									prominent notice on Our Service, prior to
 									the change becoming effective and update the
-									"Last Updated" date at the top of this
-									Privacy Policy.
+									&quot;Last Updated&quot; date at the top of
+									this Privacy Policy.
 								</p>
 								<p>
 									You are advised to review this Privacy

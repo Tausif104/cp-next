@@ -17,11 +17,11 @@ const Benefits = () => {
 							<p className='description'>
 								We have a group of forward-looking thinkers
 								dedicated to positively impacting the world. At
-								CreativePeoples, we're continually looking for
-								new methods to improve the quality of our work.
-								Whether you're a digital professional, a
-								self-starter, or an excellent communicator, we'd
-								love to talk to you.
+								CreativePeoples, we&apos;re continually looking
+								for new methods to improve the quality of our
+								work. Whether you&apos;re a digital
+								professional, a self-starter, or an excellent
+								communicator, we&apos;d love to talk to you.
 							</p>
 						</div>
 					</div>
@@ -104,8 +104,8 @@ const Benefits = () => {
 				<div className='row'>
 					<div className='col text-center'>
 						<h3>
-							Is It Time For You To Start Working The Way You've
-							Always Wanted To?
+							Is It Time For You To Start Working The Way
+							You&apos;ve Always Wanted To?
 						</h3>
 					</div>
 				</div>

@@ -212,6 +212,13 @@
 	.clients_section .section_title h3 {
 		font-size: 38px;
 	}
+	.recent-post-item {
+		flex-direction: column;
+	}
+
+	.rp-content {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1441px) {
@@ -476,6 +483,10 @@
 }
 
 @media (max-width: 991px) {
+	aside {
+		margin-left: 0;
+		margin-top: 30px;
+	}
 	.clients_button.text-end {
 		text-align: left !important;
 		margin-top: 25px;
@@ -763,6 +774,9 @@
 	}
 	.team_img_wrapper img {
 		width: 100%;
+	}
+	.contact_form_wrapper {
+		min-height: auto;
 	}
 }
 

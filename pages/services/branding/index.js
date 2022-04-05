@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -11,6 +12,13 @@ import BrandingThumb from './branding-thumb.jpg'
 const Branding = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Innovative And Attractive Logos For Branding</title>
+				<meta
+					name='description'
+					content='Our team of experts delivers a well-defined logos and branding strategy that enables you to express your message effectively, efficiently, and aesthetically.'
+				/>
+			</Head>
 			<PageBanner title='Branding &amp; Logo' />
 			<ServiceDetailsBanner
 				img={BrandingThumb.src}
@@ -28,9 +36,10 @@ const Branding = () => {
 						<div className='col-lg-6 wow fadeInLeft'>
 							<div className='cre_cta_content'>
 								<h4>
-									Request a quote or get in contact if you'd
-									like to know more information about our
-									Print Logo Design and Branding offerings.
+									Request a quote or get in contact if
+									you&apos;d like to know more information
+									about our Print Logo Design and Branding
+									offerings.
 								</h4>
 							</div>
 						</div>

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import NextNProgress from 'nextjs-progressbar'
+import 'react-modal-video/css/modal-video.css'
 import '../styles/animate.css'
 import '../styles/globals.css'
 import '../styles/responsive.css'

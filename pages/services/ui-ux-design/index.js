@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -11,6 +12,13 @@ import stages from './ui-ux-stages.json'
 const UiDesign = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Robust UI/UX Design For Your Business</title>
+				<meta
+					name='description'
+					content='We provide a valuable and robust UI/UX design that progresses your business with a significant competitive advantage in gaining and sustaining customers.'
+				/>
+			</Head>
 			<PageBanner title='UI/UX DESIGN' />
 			<ServiceDetailsBanner
 				img={UiDesignThumb.src}

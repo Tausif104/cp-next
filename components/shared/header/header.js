@@ -7,8 +7,11 @@ import IconThree from './icons/solution_icon3.png'
 import IconFour from './icons/solution_icon4.png'
 import IconFive from './icons/solution_icon5.png'
 import IconSix from './icons/solution_icon6.png'
+import { useRouter } from 'next/router'
 
 const Header = () => {
+	const router = useRouter()
+
 	useEffect(() => {
 		// sticky header
 		const headerNav = document.getElementById('headerTop')
@@ -247,10 +250,30 @@ const Header = () => {
 				<nav className='site-menu'>
 					<ul>
 						<li>
-							<Link href='/about'>About</Link>
+							<Link href='/about'>
+								<a
+									className={
+										router.pathname === '/about'
+											? 'active'
+											: ''
+									}
+								>
+									About
+								</a>
+							</Link>
 						</li>
 						<li>
-							<Link href='/services'>Services</Link>
+							<Link href='/services'>
+								<a
+									className={
+										router.pathname === '/services'
+											? 'active'
+											: ''
+									}
+								>
+									Services
+								</a>
+							</Link>
 							<ul className='mega_menu_wrap'>
 								{/* single mega link  */}
 								<Link href='/services/responsive-web'>
@@ -375,19 +398,59 @@ const Header = () => {
 							</ul>
 						</li>
 						<li>
-							<Link href='/projects'>Projects</Link>
+							<Link href='/projects'>
+								<a
+									className={
+										router.pathname === '/projects'
+											? 'active'
+											: ''
+									}
+								>
+									Projects
+								</a>
+							</Link>
 						</li>
 						<li>
-							<Link href='/blog'>Blog</Link>
+							<Link href='/blog'>
+								<a
+									className={
+										router.pathname === '/blog'
+											? 'active'
+											: ''
+									}
+								>
+									Blog
+								</a>
+							</Link>
 						</li>
 						<li>
-							<Link href='/reviews'>Reviews</Link>
+							<Link href='/reviews'>
+								<a
+									className={
+										router.pathname === '/reviews'
+											? 'active'
+											: ''
+									}
+								>
+									Reviews
+								</a>
+							</Link>
 						</li>
 						<li>
-							<Link href='/joinus'>Join Us</Link>
+							<Link href='/joinus'>
+								<a
+									className={
+										router.pathname === '/joinus'
+											? 'active'
+											: ''
+									}
+								>
+									Join Us
+								</a>
+							</Link>
 						</li>
 						<li>
-							<Link href='/contact'>Contact Us</Link>
+							<Link href='/contact'>Contact</Link>
 						</li>
 					</ul>
 				</nav>

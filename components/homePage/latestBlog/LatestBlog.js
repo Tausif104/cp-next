@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import moment from 'moment'
 
 const LatestBlog = ({ posts }) => {
 	return (
@@ -50,15 +51,32 @@ const LatestBlog = ({ posts }) => {
 											<div className='blog-meta'>
 												<span>
 													<i className='far fa-clock me-2'></i>
-													1 hour ago
+													{moment(post.date).format(
+														'MMM Do YY'
+													)}
 												</span>
 												<span>
 													<i className='far fa-user me-2'></i>{' '}
-													by <a href=''>Admin</a>
+													by{' '}
+													<Link
+														href={`/author/${post._embedded.author[0].id}`}
+													>
+														<a className='text-capitalize'>
+															{
+																post._embedded
+																	.author[0]
+																	.name
+															}
+														</a>
+													</Link>
 												</span>
 												<span>
 													<i className='far fa-comments me-2'></i>{' '}
-													15 Comments
+													{
+														post._embedded
+															.replies[0].length
+													}{' '}
+													Comments
 												</span>
 											</div>
 											<div

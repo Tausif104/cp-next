@@ -1,9 +1,22 @@
+import Head from 'next/head'
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 
 const disclaimer = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Interpretation and Definitions</title>
+				<meta
+					name='description'
+					content='The words in which the initial letter is
+									capitalized have meanings defined under the
+									following conditions. The following
+									definitions shall have the same meaning
+									regardless of whether they appear in
+									singular or in the plural.'
+				/>
+			</Head>
 			<PageBanner title='Disclaimer' />
 			<section className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
@@ -27,10 +40,11 @@ const disclaimer = () => {
 								<ul>
 									<li>
 										<strong>Company</strong> (referred to as
-										either "the Company", "We", "Us" or
-										"Our" in this Disclaimer) refers to
-										CreativePeoples, House 12/1, R 4/A,
-										Dhanmondi, Dhaka.
+										either &quot;the Company&quot;,
+										&quot;We&quot;, &quot;Us&quot; or
+										&quot;Our&quot; in this Disclaimer)
+										refers to CreativePeoples, House 12/1, R
+										4/A, Dhanmondi, Dhaka.
 									</li>
 									<li>
 										<strong>Service</strong> refers to the
@@ -122,9 +136,9 @@ const disclaimer = () => {
 								</p>
 								<p>
 									The Company believes this constitutes a
-									"fair use" of any such copyrighted material
-									as provided for in section 107 of the United
-									States Copyright law.
+									&quot;fair use&quot; of any such copyrighted
+									material as provided for in section 107 of
+									the United States Copyright law.
 								</p>
 								<p>
 									If You wish to use copyrighted material from
@@ -178,16 +192,19 @@ const disclaimer = () => {
 								</p>
 							</div>
 							<div className='text-box'>
-								<h3>"Use at Your Own Risk" Disclaimer</h3>
+								<h3>
+									&quot;Use at Your Own Risk&quot; Disclaimer
+								</h3>
 								<p>
 									All information in the Service is provided
-									"as is", with no guarantee of completeness,
-									accuracy, timeliness or of the results
-									obtained from the use of this information,
-									and without warranty of any kind, express or
-									implied, including, but not limited to
-									warranties of performance, merchantability,
-									and fitness for a particular purpose.
+									&quot;as is&quot;, with no guarantee of
+									completeness, accuracy, timeliness or of the
+									results obtained from the use of this
+									information, and without warranty of any
+									kind, express or implied, including, but not
+									limited to warranties of performance,
+									merchantability, and fitness for a
+									particular purpose.
 								</p>
 								<p>
 									The Company will not be liable to You or

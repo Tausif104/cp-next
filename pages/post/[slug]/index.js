@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef, useState, useEffect } from 'react'
 import BlogSidebar from '../../../components/blogPage/BlogSidebar/BlogSidebar'
@@ -5,7 +7,7 @@ import Layout from '../../../components/shared/Layout/Layout'
 import axios from 'axios'
 import moment from 'moment'
 
-const blogdetails = ({ post, posts, categories }) => {
+const BlogDetails = ({ post, posts, categories }) => {
 	const [comment, setComment] = useState({})
 	const [comments, setComments] = useState([])
 	const [loading, setLoading] = useState(false)
@@ -13,7 +15,7 @@ const blogdetails = ({ post, posts, categories }) => {
 	const router = useRouter()
 	const slug = router.query
 
-	const { id, title, content } = post[0]
+	const { id, title, content, excerpt } = post[0]
 
 	// refs
 	const nameRef = useRef()
@@ -59,6 +61,10 @@ const blogdetails = ({ post, posts, categories }) => {
 
 	return (
 		<Layout>
+			<Head>
+				<title>{title.rendered}</title>
+				<meta name='description' content={excerpt.rendered} />
+			</Head>
 			<section className='blog-details-page'>
 				<div className='container custom_container'>
 					<div className='row'>
@@ -73,6 +79,32 @@ const blogdetails = ({ post, posts, categories }) => {
 									}
 									alt={title?.rendered}
 								/>
+								<div className='blog-meta'>
+									<span>
+										<i className='far fa-clock me-2'></i>
+										{moment(post[0].date).format(
+											'MMM Do YY'
+										)}
+									</span>
+									<span>
+										<i className='far fa-user me-2'></i> by{' '}
+										<Link
+											href={`/author/${post[0]._embedded.author[0].id}`}
+										>
+											<a className='text-capitalize'>
+												{
+													post[0]._embedded.author[0]
+														.name
+												}
+											</a>
+										</Link>
+									</span>
+									<span>
+										<i className='far fa-comments me-2'></i>{' '}
+										{post[0]._embedded.replies[0].length}{' '}
+										Comments
+									</span>
+								</div>
 								<h1>{title?.rendered}</h1>
 								<div
 									className='content'
@@ -122,7 +154,10 @@ const blogdetails = ({ post, posts, categories }) => {
 											<div className='comments-list'>
 												<h4>Comments</h4>
 												{comments.map((c) => (
-													<div className='comment-item'>
+													<div
+														key={c.id}
+														className='comment-item'
+													>
 														<div className='comment-avatar'>
 															<img
 																src={
@@ -192,4 +227,4 @@ export const getServerSideProps = async (context) => {
 	return { props: { post, posts, categories } }
 }
 
-export default blogdetails
+export default BlogDetails

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -11,6 +12,13 @@ import WpThumb from './wp-thumb.png'
 const WordPress = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Dedicated WordPress Development With Assistance</title>
+				<meta
+					name='description'
+					content='Our professional WordPress Development services will make sure that you have an error-free interface and effective navigation of your WordPress site.'
+				/>
+			</Head>
 			<PageBanner title='WordPress Development' />
 			<ServiceDetailsBanner
 				img={WpThumb.src}

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import ServiceDetailsBanner from '../../../components/shared/ServiceDetailsBanner/ServiceDetailsBanner'
@@ -11,6 +12,13 @@ import LandingPageThumb from './landing-page-thumb.png'
 const LandingPage = () => {
 	return (
 		<Layout>
+			<Head>
+				<title>Impactful Landing Page Design For You</title>
+				<meta
+					name='description'
+					content="Our most reliable customized landing page designs enable you to attract visitors, gain reliability, generate more leads, and boost your brand's reputation."
+				/>
+			</Head>
 			<PageBanner title='LANDING PAGE DESIGN' />
 			<ServiceDetailsBanner
 				img={LandingPageThumb.src}

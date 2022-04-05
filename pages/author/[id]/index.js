@@ -5,7 +5,7 @@ import BlogListing from '../../../components/blogPage/BlogListing/BlogListing'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 import Link from 'next/link'
 
-const CategoryPostList = ({ posts, categories, allPosts }) => {
+const AuthorPosts = ({ posts, categories, allPosts }) => {
 	const router = useRouter()
 	const id = router.query
 	return (
@@ -13,7 +13,7 @@ const CategoryPostList = ({ posts, categories, allPosts }) => {
 			<Head>
 				<title>Archive</title>
 			</Head>
-			<PageBanner title='Category' />
+			<PageBanner title='Author' />
 			<div className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
 					<div className='col-lg-9'>
@@ -84,7 +84,7 @@ export const getServerSideProps = async (context) => {
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
 	)
 	const res = await fetch(
-		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?categories=${context.params.id}&_embed`
+		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?author=${context.params.id}&_embed`
 	)
 	const catRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/categories'
@@ -97,4 +97,4 @@ export const getServerSideProps = async (context) => {
 	return { props: { posts, categories, allPosts } }
 }
 
-export default CategoryPostList
+export default AuthorPosts

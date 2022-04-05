@@ -1,14 +1,18 @@
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Layout from '../../../components/shared/Layout/Layout'
 import PageBanner from '../../../components/shared/PageBanner/PageBanner'
 
-const project = ({ project }) => {
+const Project = ({ project }) => {
 	const router = useRouter()
 	const { id } = router.query
 	const { title, description, images, tags } = project
 
 	return (
 		<Layout>
+			<Head>
+				<title>{title}</title>
+			</Head>
 			<PageBanner title='Project Details' />
 			<section className='project-details-section'>
 				<div className='container custom_container'>
@@ -47,4 +51,4 @@ export async function getServerSideProps(context) {
 	return { props: { project } }
 }
 
-export default project
+export default Project

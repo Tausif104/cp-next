@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 import BlogListing from '../components/blogPage/BlogListing/BlogListing'
@@ -6,6 +7,13 @@ import Link from 'next/link'
 const blog = ({ posts, categories }) => {
 	return (
 		<Layout>
+			<Head>
+				<title>Learn Everything You Need To Know</title>
+				<meta
+					name='description'
+					content='If you are still confused and want to learn more about our product and services then look no further and go to our Blog Page.'
+				/>
+			</Head>
 			<PageBanner title='Blog' />
 			<div className='container custom_container padding_top padding_bottom'>
 				<div className='row'>

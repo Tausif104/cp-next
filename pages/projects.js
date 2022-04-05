@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import LivelinkList from '../components/projectPage/LiveLinks/LivelinkList'
 import ProjectList from '../components/projectPage/ProjectList/ProjectList'
 import Layout from '../components/shared/Layout/Layout'
@@ -6,6 +7,13 @@ import PageBanner from '../components/shared/PageBanner/PageBanner'
 const projects = ({ projects }) => {
 	return (
 		<Layout>
+			<Head>
+				<title>Fully Customer Satisfied Projects</title>
+				<meta
+					name='description'
+					content='We have delivered 1100+ customer-satisfied projects with smiles, happiness, joys, and charm. Click here and spread your joy with everyone!'
+				/>
+			</Head>
 			<PageBanner title='Projects' />
 			<ProjectList projects={projects} />
 			<LivelinkList />

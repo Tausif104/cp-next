@@ -11,7 +11,7 @@ const ContactInfo = () => {
 				grow and change. Our team will gladly join your conversation and
 				develop a unique solution for what you want to do. Please fill
 				out the short form below, and we will get back to you as soon as
-				possible. We'd love to talk to you.
+				possible. We&apos;d love to talk to you.
 			</p>
 			<a
 				className='contact_info_meta mt-3 text-orange'
