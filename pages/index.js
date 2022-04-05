@@ -25,6 +25,10 @@ export default function Home({ posts }) {
 					content="Are you searching for reliable, trustworthy, and superior web design and developing services? Then don't look any further, and CreativePeoples is here!"
 				/>
 				<link rel='icon' href='/favicon.ico' />
+				<link
+					rel='stylesheet'
+					href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap'
+				/>
 			</Head>
 			<Layout>
 				<Banner />
