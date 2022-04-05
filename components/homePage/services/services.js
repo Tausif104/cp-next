@@ -1,4 +1,4 @@
-import ServiceMobile from './ServiceMobile'
+import ServiceMobile from './serviceMobile'
 import { useEffect } from 'react'
 import ServiceBgOne from './images/service-bg-1.jpg'
 import ServiceBgTwo from './images/service-bg-2.jpg'

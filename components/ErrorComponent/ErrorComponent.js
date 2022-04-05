@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import DarkLogo from './images/dark-logo.png'
-import notFoundText from './images/notFound-text.png'
+import notFoundText from './images/notfound-text.png'
 import notFoundThumb from './images/notFound.png'
 
 const ErrorComponent = () => {
