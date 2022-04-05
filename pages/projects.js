@@ -4,7 +4,7 @@ import ProjectList from '../components/projectPage/ProjectList/ProjectList'
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 
-const projects = ({ projects }) => {
+const projects = ({ projects, links }) => {
 	return (
 		<Layout>
 			<Head>
@@ -16,7 +16,7 @@ const projects = ({ projects }) => {
 			</Head>
 			<PageBanner title='Projects' />
 			<ProjectList projects={projects} />
-			<LivelinkList />
+			<LivelinkList links={links} />
 		</Layout>
 	)
 }
@@ -25,9 +25,15 @@ export async function getServerSideProps() {
 	const res = await fetch(
 		'https://api.dribbble.com/v2/user/shots?access_token=1d41a60e6a59faef44cabd36abcf7003292ec9a0a49fc2db833e2c537bcb86b5'
 	)
-	const projects = await res.json()
 
-	return { props: { projects } }
+	const linkRes = await fetch(
+		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/link?_embed'
+	)
+
+	const projects = await res.json()
+	const links = await linkRes.json()
+
+	return { props: { projects, links } }
 }
 
 export default projects

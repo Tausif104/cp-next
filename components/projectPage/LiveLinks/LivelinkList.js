@@ -1,7 +1,6 @@
-import links from './livelink.json'
 import LinkCard from '../LinkCard/LinkCard'
 
-const LivelinkList = () => {
+const LivelinkList = ({ links }) => {
 	return (
 		<section className='live-site-links gray-bg section_padding'>
 			<div className='container custom_container'>
