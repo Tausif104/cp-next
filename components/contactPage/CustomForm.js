@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import CheckPng from './check.png'
 
 const CustomForm = ({ status, message, onValidated }) => {
 	const nameRef = useRef()
@@ -88,12 +89,10 @@ const CustomForm = ({ status, message, onValidated }) => {
 				</form>
 			) : (
 				<div className='contact-form-alert text-center'>
-					<h3>{message}</h3>
 					<span>
-						<p>
-							<i className='far fa-check-circle'></i>{' '}
-						</p>
+						<img src={CheckPng.src} />
 					</span>
+					<h3>{message}</h3>
 				</div>
 			)}
 		</>

@@ -27,17 +27,13 @@ const LatestBlog = ({ posts }) => {
 							posts.slice(0, 3).map((post, i) => (
 								<div key={post.id} className='col-lg-4'>
 									<div className='blog-post-card'>
-										{post._embedded['wp:featuredmedia']?.[
-											'0'
-										].source_url && (
+										{post.x_featured_media_original && (
 											<Link href={`/post/${post.slug}`}>
 												<a>
 													<img
 														className='img-fluid'
 														src={
-															post._embedded[
-																'wp:featuredmedia'
-															]?.['0'].source_url
+															post.x_featured_media_original
 														}
 														alt=''
 													/>

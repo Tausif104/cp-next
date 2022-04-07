@@ -70,15 +70,10 @@ const BlogDetails = ({ post, posts, categories }) => {
 					<div className='row'>
 						<div className='col-lg-9'>
 							<div className='blog-details-post'>
-								{post[0]?._embedded['wp:featuredmedia']?.['0']
-									.source_url && (
+								{post[0]?.x_featured_media_original && (
 									<img
 										className='w-100'
-										src={
-											post[0]?._embedded[
-												'wp:featuredmedia'
-											]?.['0'].source_url
-										}
+										src={post[0]?.x_featured_media_original}
 										alt={title?.rendered}
 									/>
 								)}
@@ -110,7 +105,11 @@ const BlogDetails = ({ post, posts, categories }) => {
 										Comments
 									</span>
 								</div>
-								<h1>{title?.rendered}</h1>
+								<h1
+									dangerouslySetInnerHTML={{
+										__html: title?.rendered,
+									}}
+								></h1>
 								<div
 									className='content'
 									dangerouslySetInnerHTML={{

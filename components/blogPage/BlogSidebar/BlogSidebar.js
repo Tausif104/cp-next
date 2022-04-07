@@ -50,21 +50,20 @@ const BlogSidebar = ({ post, posts, categories }) => {
 					{posts &&
 						posts.slice(0, 3).map((post) => (
 							<div className='recent-post-item' key={post.id}>
-								{post._embedded['wp:featuredmedia']?.['0']
-									.source_url && (
+								{post.x_featured_media_original && (
 									<img
-										src={
-											post._embedded[
-												'wp:featuredmedia'
-											]?.['0'].source_url
-										}
+										src={post.x_featured_media_original}
 										alt={post.title.rendered}
 									/>
 								)}
 								<div className='rp-content'>
 									<h5>
 										<Link href={`/post/${post.slug}`}>
-											{post.title.rendered}
+											<a
+												dangerouslySetInnerHTML={{
+													__html: post.title.rendered,
+												}}
+											></a>
 										</Link>
 									</h5>
 									<div
@@ -79,17 +78,6 @@ const BlogSidebar = ({ post, posts, categories }) => {
 							</div>
 						))}
 				</div>
-			</div>
-
-			<div className='categories'>
-				<h4>Categories - {categories.length}</h4>
-				<ul>
-					{categories.map((cat) => (
-						<li key={cat.id}>
-							<Link href={`/category/${cat.id}`}>{cat.name}</Link>
-						</li>
-					))}
-				</ul>
 			</div>
 		</aside>
 	)

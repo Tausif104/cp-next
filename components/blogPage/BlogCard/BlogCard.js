@@ -5,26 +5,25 @@ const BlogCard = ({ post }) => {
 	return (
 		<div className='col-lg-6'>
 			<div className='blog-post-card'>
-				{post._embedded['wp:featuredmedia']?.['0'].source_url && (
+				{post.x_featured_media_original && (
 					<Link href={`/post/${post.slug}`}>
 						<a>
 							<img
 								className='img-fluid'
-								src={
-									post._embedded['wp:featuredmedia']?.['0']
-										.source_url
-								}
+								src={post.x_featured_media_original}
 								alt={post.title.rendered}
 							/>
 						</a>
 					</Link>
 				)}
 				<div className='blog-post-text'>
-					<h3>
-						<Link href={`/post/${post.slug}`}>
-							{post.title.rendered}
-						</Link>
-					</h3>
+					<Link href={`/post/${post.slug}`}>
+						<h3
+							dangerouslySetInnerHTML={{
+								__html: post.title.rendered,
+							}}
+						></h3>
+					</Link>
 					<div className='blog-meta'>
 						<span>
 							<i className='far fa-clock me-2'></i>

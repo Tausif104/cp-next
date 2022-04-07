@@ -5010,7 +5010,7 @@ aside {
 }
 
 .blog-details-post .content p {
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 10px;
 }
 
@@ -6330,4 +6330,14 @@ section.logo-sliders img {
 
 .recent-post-item img {
 	margin-right: 20px;
+}
+
+.content a {
+	color: #f26522;
+	text-decoration: underline;
+}
+
+.content b {
+	color: #333;
+	font-weight: 900 !important;
 }

@@ -31,14 +31,10 @@ const blog = ({ posts, categories }) => {
 												className='recent-post-item'
 												key={post.id}
 											>
-												{post._embedded[
-													'wp:featuredmedia'
-												]?.['0'].source_url && (
+												{post.x_featured_media_original && (
 													<img
 														src={
-															post._embedded[
-																'wp:featuredmedia'
-															]?.['0'].source_url
+															post.x_featured_media_original
 														}
 														alt={
 															post.title.rendered
@@ -50,10 +46,13 @@ const blog = ({ posts, categories }) => {
 														<Link
 															href={`/post/${post.slug}`}
 														>
-															{
-																post.title
-																	.rendered
-															}
+															<a
+																dangerouslySetInnerHTML={{
+																	__html: post
+																		.title
+																		.rendered,
+																}}
+															></a>
 														</Link>
 													</h5>
 													<div
@@ -68,19 +67,6 @@ const blog = ({ posts, categories }) => {
 											</div>
 										))}
 								</div>
-							</div>
-
-							<div className='categories'>
-								<h4>Categories - {categories.length}</h4>
-								<ul>
-									{categories.map((cat) => (
-										<li key={cat.id}>
-											<Link href={`/category/${cat.id}`}>
-												{cat.name}
-											</Link>
-										</li>
-									))}
-								</ul>
 							</div>
 						</aside>
 					</div>
