@@ -25,38 +25,48 @@ const blog = ({ posts, categories }) => {
 							<div className='recent-post'>
 								<h4>Recent Posts</h4>
 								<div className='recent-posts-list'>
-									{posts?.map((post) => (
-										<div
-											className='recent-post-item'
-											key={post.id}
-										>
-											<img
-												src={
-													post._embedded[
-														'wp:featuredmedia'
-													]?.['0'].source_url
-												}
-												alt={post.title.rendered}
-											/>
-											<div className='rp-content'>
-												<h5>
-													<Link
-														href={`/post/${post.slug}`}
-													>
-														{post.title.rendered}
-													</Link>
-												</h5>
-												<div
-													dangerouslySetInnerHTML={{
-														__html: post.excerpt.rendered.slice(
-															0,
-															50
-														),
-													}}
-												></div>
+									{posts &&
+										posts.slice(0, 3).map((post) => (
+											<div
+												className='recent-post-item'
+												key={post.id}
+											>
+												{post._embedded[
+													'wp:featuredmedia'
+												]?.['0'].source_url && (
+													<img
+														src={
+															post._embedded[
+																'wp:featuredmedia'
+															]?.['0'].source_url
+														}
+														alt={
+															post.title.rendered
+														}
+													/>
+												)}
+												<div className='rp-content'>
+													<h5>
+														<Link
+															href={`/post/${post.slug}`}
+														>
+															{
+																post.title
+																	.rendered
+															}
+														</Link>
+													</h5>
+													<div
+														dangerouslySetInnerHTML={{
+															__html: post.excerpt.rendered.slice(
+																0,
+																50
+															),
+														}}
+													></div>
+												</div>
 											</div>
-										</div>
-									))}
+										))}
 								</div>
 							</div>
 

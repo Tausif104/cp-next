@@ -4,3 +4,8 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+// module.exports = {
+// 	basePath: '/cp-dev',
+// 	trailingSlash: true,
+// }

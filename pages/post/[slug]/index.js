@@ -70,15 +70,18 @@ const BlogDetails = ({ post, posts, categories }) => {
 					<div className='row'>
 						<div className='col-lg-9'>
 							<div className='blog-details-post'>
-								<img
-									className='w-100'
-									src={
-										post[0]?._embedded[
-											'wp:featuredmedia'
-										]?.['0'].source_url
-									}
-									alt={title?.rendered}
-								/>
+								{post[0]?._embedded['wp:featuredmedia']?.['0']
+									.source_url && (
+									<img
+										className='w-100'
+										src={
+											post[0]?._embedded[
+												'wp:featuredmedia'
+											]?.['0'].source_url
+										}
+										alt={title?.rendered}
+									/>
+								)}
 								<div className='blog-meta'>
 									<span>
 										<i className='far fa-clock me-2'></i>
@@ -101,7 +104,9 @@ const BlogDetails = ({ post, posts, categories }) => {
 									</span>
 									<span>
 										<i className='far fa-comments me-2'></i>{' '}
-										{post[0]._embedded.replies[0].length}{' '}
+										{post._embedded?.replies
+											? post._embedded.replies[0].length
+											: 0}{' '}
 										Comments
 									</span>
 								</div>
@@ -151,45 +156,49 @@ const BlogDetails = ({ post, posts, categories }) => {
 													}
 												/>
 											</form>
-											<div className='comments-list'>
-												<h4>Comments</h4>
-												{comments.map((c) => (
-													<div
-														key={c.id}
-														className='comment-item'
-													>
-														<div className='comment-avatar'>
-															<img
-																src={
-																	c
-																		?.author_avatar_urls?.[96]
-																}
-																alt=''
-															/>
+											{comments.length > 0 && (
+												<div className='comments-list'>
+													<h4>Comments</h4>
+													{comments.map((c) => (
+														<div
+															key={c.id}
+															className='comment-item'
+														>
+															<div className='comment-avatar'>
+																<img
+																	src={
+																		c
+																			?.author_avatar_urls?.[96]
+																	}
+																	alt=''
+																/>
+															</div>
+															<div className='comment-right'>
+																<h4>
+																	{
+																		c.author_name
+																	}
+																</h4>
+																<div
+																	className='comment-body'
+																	dangerouslySetInnerHTML={{
+																		__html: c
+																			?.content
+																			?.rendered,
+																	}}
+																></div>
+																<p>
+																	{moment(
+																		c.date
+																	).format(
+																		'MMM Do YY'
+																	)}
+																</p>
+															</div>
 														</div>
-														<div className='comment-right'>
-															<h4>
-																{c.author_name}
-															</h4>
-															<div
-																className='comment-body'
-																dangerouslySetInnerHTML={{
-																	__html: c
-																		?.content
-																		?.rendered,
-																}}
-															></div>
-															<p>
-																{moment(
-																	c.date
-																).format(
-																	'MMM Do YY'
-																)}
-															</p>
-														</div>
-													</div>
-												))}
-											</div>
+													))}
+												</div>
+											)}
 										</div>
 									</div>
 								</div>

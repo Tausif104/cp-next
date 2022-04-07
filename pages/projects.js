@@ -27,7 +27,7 @@ export async function getServerSideProps() {
 	)
 
 	const linkRes = await fetch(
-		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/link?_embed'
+		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/link?per_page=100&&_embed'
 	)
 
 	const projects = await res.json()

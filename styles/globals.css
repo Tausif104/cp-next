@@ -5177,6 +5177,22 @@ section.logo-sliders img {
 	max-width: 140px;
 }
 
+.content b {
+	font-weight: 700;
+}
+
+.content p {
+	margin-bottom: 20px !important;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	margin-bottom: 20px !important;
+}
+
 /* responsive css */
 
 @media (min-width: 991px) {
@@ -6306,4 +6322,12 @@ section.logo-sliders img {
 	.single_different_item {
 		padding: 25px;
 	}
+}
+
+.rp-content {
+	margin-left: 0;
+}
+
+.recent-post-item img {
+	margin-right: 20px;
 }

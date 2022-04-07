@@ -5,18 +5,20 @@ const BlogCard = ({ post }) => {
 	return (
 		<div className='col-lg-6'>
 			<div className='blog-post-card'>
-				<Link href={`/post/${post.slug}`}>
-					<a>
-						<img
-							className='img-fluid'
-							src={
-								post._embedded['wp:featuredmedia']?.['0']
-									.source_url
-							}
-							alt={post.title.rendered}
-						/>
-					</a>
-				</Link>
+				{post._embedded['wp:featuredmedia']?.['0'].source_url && (
+					<Link href={`/post/${post.slug}`}>
+						<a>
+							<img
+								className='img-fluid'
+								src={
+									post._embedded['wp:featuredmedia']?.['0']
+										.source_url
+								}
+								alt={post.title.rendered}
+							/>
+						</a>
+					</Link>
+				)}
 				<div className='blog-post-text'>
 					<h3>
 						<Link href={`/post/${post.slug}`}>
@@ -40,7 +42,10 @@ const BlogCard = ({ post }) => {
 						</span>
 						<span>
 							<i className='far fa-comments me-2'></i>{' '}
-							{post._embedded.replies[0].length} Comments
+							{post._embedded.replies
+								? post._embedded.replies[0].length
+								: 0}{' '}
+							Comments
 						</span>
 					</div>
 					<div

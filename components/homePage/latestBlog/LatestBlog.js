@@ -27,19 +27,23 @@ const LatestBlog = ({ posts }) => {
 							posts.slice(0, 3).map((post, i) => (
 								<div key={post.id} className='col-lg-4'>
 									<div className='blog-post-card'>
-										<Link href={`/post/${post.slug}`}>
-											<a>
-												<img
-													className='img-fluid'
-													src={
-														post._embedded[
-															'wp:featuredmedia'
-														]?.['0'].source_url
-													}
-													alt=''
-												/>
-											</a>
-										</Link>
+										{post._embedded['wp:featuredmedia']?.[
+											'0'
+										].source_url && (
+											<Link href={`/post/${post.slug}`}>
+												<a>
+													<img
+														className='img-fluid'
+														src={
+															post._embedded[
+																'wp:featuredmedia'
+															]?.['0'].source_url
+														}
+														alt=''
+													/>
+												</a>
+											</Link>
+										)}
 										<div className='blog-post-text'>
 											<h3>
 												<Link
@@ -72,10 +76,11 @@ const LatestBlog = ({ posts }) => {
 												</span>
 												<span>
 													<i className='far fa-comments me-2'></i>{' '}
-													{
-														post._embedded
-															.replies[0].length
-													}{' '}
+													{post._embedded.replies
+														? post._embedded
+																.replies[0]
+																.length
+														: 0}{' '}
 													Comments
 												</span>
 											</div>
