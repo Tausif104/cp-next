@@ -1,22 +1,32 @@
 [
 	{
 		"id": 1,
-		"title": "Controlling printing may be a time-consuming process. For printing, we offer a full range of services, from concept to finished product."
+		"img": "../images/service-details/printing/feature-icons/1.png",
+		"title": "Controlling printing may be a time-consuming process.",
+		"desc": "Controlling printing may be a time-consuming process. For printing, we offer a full range of services, from concept to finished product."
 	},
 	{
 		"id": 2,
-		"title": "There are several print kinds, styles, and finishes to choose from. We can help you select the most refined finish for your project since we work with you to understand your demands."
+		"img": "../images/service-details/printing/feature-icons/2.png",
+		"title": "There are several print kinds, styles, and finishes to choose from.",
+		"desc": "We can help you select the most refined finish for your project since we work with you to understand your demands."
 	},
 	{
 		"id": 3,
-		"title": "You may use a variety of finishes to get your point, though, from glossy to matt or even spot-UV."
+		"img": "../images/service-details/printing/feature-icons/3.png",
+		"title": "You may use a variety of finishes to get your point",
+		"desc": "You may use a variety of finishes to get your point, though, from glossy to matt or even spot-UV."
 	},
 	{
 		"id": 4,
-		"title": "You can rest assured that we'll get you the best possible print costs when you deal with us because of our extensive supplier network."
+		"img": "../images/service-details/printing/feature-icons/4.png",
+		"title": "You can rest assured that we'll get you the best possible ",
+		"desc": "You can rest assured that we'll get you the best possible print costs when you deal with us because of our extensive supplier network."
 	},
 	{
 		"id": 5,
-		"title": "Printing from specialized companies ensures a high-quality final result that matches your carefully prepared print design."
+		"img": "../images/service-details/printing/feature-icons/5.png",
+		"title": "Printing from specialized companies ensures",
+		"desc": "Printing from specialized companies ensures a high-quality final result that matches your carefully prepared print design."
 	}
 ]

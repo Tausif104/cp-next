@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import moment from 'moment'
 
-const BlogCard = ({ post }) => {
+const BlogCard = ({ post, column }) => {
 	return (
-		<div className='col-lg-6'>
+		<div className={`col-lg-${column === 2 ? '6' : '4'}`}>
 			<div className='blog-post-card'>
 				{post.x_featured_media_original && (
 					<Link href={`/post/${post.slug}`}>
@@ -53,7 +53,11 @@ const BlogCard = ({ post }) => {
 							__html: post.excerpt.rendered,
 						}}
 					></div>
-					<Link href={`/post/${post.slug}`}>Read More</Link>
+					<Link href={`/post/${post.slug}`}>
+						<a className='inline-btn'>
+							Read More <i className='fas fa-angle-right'></i>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>

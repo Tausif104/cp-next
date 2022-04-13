@@ -6,6 +6,7 @@ import BlogSidebar from '../../../components/blogPage/BlogSidebar/BlogSidebar'
 import Layout from '../../../components/shared/Layout/Layout'
 import axios from 'axios'
 import moment from 'moment'
+import BlogCard from '../../../components/blogPage/BlogCard/BlogCard'
 
 const BlogDetails = ({ post, posts, categories }) => {
 	const [comment, setComment] = useState({})
@@ -15,7 +16,9 @@ const BlogDetails = ({ post, posts, categories }) => {
 	const router = useRouter()
 	const slug = router.query
 
-	const { id, title, content, excerpt } = post[0]
+	const { id, title, content, excerpt, link } = post[0]
+
+	const newContent = content.rendered.replaceAll(link + '#', '#')
 
 	// refs
 	const nameRef = useRef()
@@ -113,7 +116,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 								<div
 									className='content'
 									dangerouslySetInnerHTML={{
-										__html: content?.rendered,
+										__html: newContent,
 									}}
 								></div>
 								<div className='row'>
@@ -210,6 +213,18 @@ const BlogDetails = ({ post, posts, categories }) => {
 								categories={categories}
 							/>
 						</div>
+					</div>
+					<div className='row related_posts'>
+						<div className='col-lg-12 text-center'>
+							<div className='cre_cta_content'>
+								<h3 className='title'>
+									<span>Related Posts</span>
+								</h3>
+							</div>
+						</div>
+						{posts.slice(0, 3).map((post) => (
+							<BlogCard post={post} />
+						))}
 					</div>
 				</div>
 			</section>

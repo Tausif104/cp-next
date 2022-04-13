@@ -75,11 +75,15 @@ const Benefits = () => {
 									className='img-fluid'
 								/>
 							</div>
-							<h4>Paternity Leave</h4>
+							<h4>A SECURE SOURCE OF WORK</h4>
 							<p>
-								To leave benefits and distinguish between
-								primary and secondary carers is an outstanding
-								achievement for our family.
+								We are a passionate, open, united workforce that
+								isn't scared to work hard or take on new
+								challenges. Every employee, regardless of
+								position, is vital to the success of our
+								company. As a full-stack agency, we strive to
+								create a work environment that is both pleasant
+								and productive.
 							</p>
 						</div>
 					</div>
@@ -103,10 +107,12 @@ const Benefits = () => {
 				</div>
 				<div className='row'>
 					<div className='col text-center'>
-						<h3>
-							Is It Time For You To Start Working The Way
-							You&apos;ve Always Wanted To?
-						</h3>
+						<div className='benefit-cta'>
+							<h3>
+								Is It Time For You To Start Working The Way
+								You&apos;ve Always Wanted To?
+							</h3>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -8,6 +8,7 @@ import Link from 'next/link'
 const AuthorPosts = ({ posts, categories, allPosts }) => {
 	const router = useRouter()
 	const id = router.query
+	console.log(posts)
 	return (
 		<Layout>
 			<Head>
@@ -24,16 +25,14 @@ const AuthorPosts = ({ posts, categories, allPosts }) => {
 							<div className='recent-post'>
 								<h4>Recent Posts</h4>
 								<div className='recent-posts-list'>
-									{allPosts?.map((post) => (
+									{allPosts?.slice(0, 3).map((post) => (
 										<div
 											className='recent-post-item'
 											key={post.id}
 										>
 											<img
 												src={
-													post._embedded[
-														'wp:featuredmedia'
-													]?.['0'].source_url
+													post.x_featured_media_original
 												}
 												alt={post.title.rendered}
 											/>
@@ -57,19 +56,6 @@ const AuthorPosts = ({ posts, categories, allPosts }) => {
 										</div>
 									))}
 								</div>
-							</div>
-
-							<div className='categories'>
-								<h4>Categories - {categories.length}</h4>
-								<ul>
-									{categories.map((cat) => (
-										<li key={cat.id}>
-											<Link href={`/category/${cat.id}`}>
-												{cat.name}
-											</Link>
-										</li>
-									))}
-								</ul>
 							</div>
 						</aside>
 					</div>

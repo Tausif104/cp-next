@@ -26,34 +26,14 @@ const PrintDesigns = () => {
 				title='Print Designs'
 				desc='CreativePeoples designs world-class marketing materials with pixel-perfect strategies for your digital products. We also believe great product results from an impeccable design and we do it perfectly to spread your products, services, promotions, offers, messages worldwide.'
 			/>
-			<section className='service-checklist padding_bottom'>
-				<div className='container custom_container'>
-					<div className='row'>
-						<div className='col-lg-12'>
-							<div className='section-title'>
-								<h2 className='title'>
-									Why Do You Choose <br />
-									<span>Our Print Design Service?</span>
-								</h2>
-							</div>
-						</div>
-					</div>
-					<div className='row'>
-						<div className='col-lg-12'>
-							<ul className='service-list-items'>
-								{features.map((feature) => (
-									<li key={feature.id}>
-										<img src={CpFav.src} alt='' />{' '}
-										<span>{feature.title}</span>
-									</li>
-								))}
-							</ul>
-						</div>
-						<div className='col-lg-6'></div>
-					</div>
-				</div>
-			</section>
-			<ServiceStages stages={stages} />
+			<ServiceFeatures
+				heading='Why Do You Choose <br/> <span>Our Print Design Service?</span>'
+				features={features}
+			/>
+			<ServiceStages
+				stages={stages}
+				heading='Steps Of Preparing Your Amazing <br/>  <span>Print Design Materials</span>'
+			/>
 			<CtaTwo
 				title='Proven Results <span class="d-block">At An Affordable Price</span>'
 				desc="We're here to assist you! Submit your query below, and one of our experts will contact you shortly to make your dreams come true."
