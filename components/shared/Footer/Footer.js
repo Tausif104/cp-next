@@ -173,12 +173,23 @@ const Footer = () => {
 									</span>
 								</li>
 							</ul>
+							<iframe
+								src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1984632707367!2d90.3714182159617!3d23.74030119507684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4a959a3969%3A0xb9dbf8443fe868b6!2sHouse%20No-12%2C%201%20Road%20No.%204A%2C%20Dhaka%201209!5e0!3m2!1sen!2sbd!4v1649801951076!5m2!1sen!2sbd'
+								width='380'
+								height='300'
+								style={{ border: 0 }}
+								allowfullscreen=''
+								loading='lazy'
+								referrerpolicy='no-referrer-when-downgrade'
+							></iframe>
 						</div>
 					</div>
 					<div className='dl_col_lg_12 wow fadeInUp'>
 						<div className='cre_copyright_content'>
 							<div className='copyright_content_inner'>
-								<p>copyright 2022, All Rights Reserved</p>
+								<p>
+									Copyright &copy; 2022, All Rights Reserved
+								</p>
 							</div>
 							<div className='copyright_content_inner'>
 								<ul>
@@ -203,6 +214,9 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+			<a href='#scrollToTop' className='scroll-top'>
+				<i className='fas fa-arrow-up'></i>
+			</a>
 		</footer>
 	)
 }

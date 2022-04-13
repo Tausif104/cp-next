@@ -1,10 +1,20 @@
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 import BlogListing from '../components/blogPage/BlogListing/BlogListing'
 import Link from 'next/link'
 
-const blog = ({ posts, categories }) => {
+const blog = ({ posts }) => {
+	const [visible, setVisible] = useState(4)
+
+	const handleLoadMore = () => {
+		if (posts.length > visible) {
+			setVisible((prev) => prev + 4)
+		}
+	}
+	console.log(visible, posts.length)
+
 	return (
 		<Layout>
 			<Head>
@@ -18,7 +28,17 @@ const blog = ({ posts, categories }) => {
 			<div className='container custom_container padding_top padding_bottom'>
 				<div className='row'>
 					<div className='col-lg-9'>
-						<BlogListing posts={posts} />
+						<BlogListing posts={posts.slice(0, visible)} />
+						<div className='load-more-wrapper text-center mt-5'>
+							{posts.length > visible && (
+								<button
+									className='inline-btn'
+									onClick={handleLoadMore}
+								>
+									Load More
+								</button>
+							)}
+						</div>
 					</div>
 					<div className='col-lg-3'>
 						<aside>
@@ -78,7 +98,7 @@ const blog = ({ posts, categories }) => {
 
 export const getServerSideProps = async () => {
 	const res = await fetch(
-		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
+		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?per_page=100&&_embed'
 	)
 	const catRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/categories'

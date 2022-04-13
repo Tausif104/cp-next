@@ -8,7 +8,7 @@ const LivelinkList = ({ links }) => {
 					<div className='col-lg-12'>
 						<div className='section-title text-center'>
 							<h2 className='title'>
-								Live <span>Site Link</span>
+								Samples Of Our <span>Previous Works</span>
 							</h2>
 						</div>
 					</div>
