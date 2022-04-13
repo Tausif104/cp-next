@@ -28,7 +28,11 @@ const LatestBlog = ({ posts }) => {
 							posts
 								.slice(0, 3)
 								.map((post) => (
-									<BlogCard post={post} column={3} />
+									<BlogCard
+										key={post.id}
+										post={post}
+										column={3}
+									/>
 								))}
 					</div>
 				</div>

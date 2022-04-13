@@ -78,7 +78,7 @@ const Benefits = () => {
 							<h4>A SECURE SOURCE OF WORK</h4>
 							<p>
 								We are a passionate, open, united workforce that
-								isn't scared to work hard or take on new
+								isn&apos;t scared to work hard or take on new
 								challenges. Every employee, regardless of
 								position, is vital to the success of our
 								company. As a full-stack agency, we strive to

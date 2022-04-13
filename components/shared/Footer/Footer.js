@@ -178,7 +178,6 @@ const Footer = () => {
 								width='380'
 								height='300'
 								style={{ border: 0 }}
-								allowfullscreen=''
 								loading='lazy'
 								referrerpolicy='no-referrer-when-downgrade'
 							></iframe>

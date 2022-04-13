@@ -223,7 +223,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 							</div>
 						</div>
 						{posts.slice(0, 3).map((post) => (
-							<BlogCard post={post} />
+							<BlogCard key={post.id} post={post} />
 						))}
 					</div>
 				</div>

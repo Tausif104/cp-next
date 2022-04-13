@@ -5,7 +5,7 @@ import PageBanner from '../components/shared/PageBanner/PageBanner'
 import BlogListing from '../components/blogPage/BlogListing/BlogListing'
 import Link from 'next/link'
 
-const blog = ({ posts }) => {
+const Blog = ({ posts }) => {
 	const [visible, setVisible] = useState(4)
 
 	const handleLoadMore = () => {
@@ -109,4 +109,4 @@ export const getServerSideProps = async () => {
 	return { props: { posts, categories } }
 }
 
-export default blog
+export default Blog
