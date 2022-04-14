@@ -6,6 +6,6 @@
 // module.exports = nextConfig
 
 module.exports = {
-	basePath: '/cp-dev',
+	basePath: '/',
 	trailingSlash: true,
 }
