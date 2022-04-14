@@ -6612,3 +6612,16 @@ a.scroll-top:hover {
 .logo-sliders .section_title {
 	margin-bottom: 50px;
 }
+
+@media screen and (max-width: 767px) {
+	.cre_video_popup_section iframe {
+		height: 203px;
+	}
+	.benefit-cta {
+		padding: 30px;
+	}
+
+	.benefit-cta h3 {
+		font-size: 25px;
+	}
+}

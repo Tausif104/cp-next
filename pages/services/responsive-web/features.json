@@ -1,31 +1,31 @@
 [
 	{
 		"id": 1,
-		"img": "../images/service-details/responsive/feature-icons/1.png",
+		"img": "/images/service-details/responsive/feature-icons/1.png",
 		"title": "Responsive Design",
 		"desc": "Our responsive web design services build a customer base by enticing users to take action on your site. The website will be able to change at the drop of a hat. In addition, it ensures that consumers get the best possible experience on every device."
 	},
 	{
 		"id": 2,
-		"img": "../images/service-details/responsive/feature-icons/2.png",
+		"img": "/images/service-details/responsive/feature-icons/2.png",
 		"title": "Flexible Images and Videos",
 		"desc": "Website designers at CreativePeoples use adaptable containers for all of its assets, which resize themselves as the browser window or the user moves to a different device change. Thus, maximizing media content is as simple as setting the max-width attribute to 100%."
 	},
 	{
 		"id": 3,
-		"img": "../images/service-details/responsive/feature-icons/3.png",
+		"img": "/images/service-details/responsive/feature-icons/3.png",
 		"title": "Adjusting Screen Resolution",
 		"desc": "Screen resolution, quality, and orientation all change with the number of devices available. Even though new devices with different screen sizes are being invented every day, each of these devices will be able to accommodate differences in size, functionality, and even color."
 	},
 	{
 		"id": 4,
-		"img": "../images/service-details/responsive/feature-icons/4.png",
+		"img": "/images/service-details/responsive/feature-icons/4.png",
 		"title": "Flexible Layouts",
 		"desc": "Using a flexible grid to design a website's layout is known as a flexible layout. We use CSS to build a variety of different grids with high standards. For example, columns in a web design adapt to the size of the monitor or browser window they're shown on."
 	},
 	{
 		"id": 5,
-		"img": "../images/service-details/responsive/feature-icons/5.png",
+		"img": "/images/service-details/responsive/feature-icons/5.png",
 		"title": "Media Queries",
 		"desc": "The flexible layout approach isn't good to ensure that the design works smoothly on various devices. It can cause the layout to break and generate columns that are too tiny to show information properly. So again, the media questions come to the rescue. Finally, we are ready to develop a mobile-friendly, well-responsive website for you at the best possible pricing with lots of benefits and opportunities."
 	}

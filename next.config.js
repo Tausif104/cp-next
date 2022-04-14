@@ -6,6 +6,6 @@
 // module.exports = nextConfig
 
 module.exports = {
-	basePath: '/',
+	basePath: '',
 	trailingSlash: true,
 }

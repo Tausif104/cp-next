@@ -4,27 +4,27 @@
 		"title": "Brief of the Task",
 		"stage": "One",
 		"desc": "The customer will present a brief, whether verbal or written, and our role is to study and deconstruct. Discuss possible print finishes and their expected outcomes at this point in the process.",
-		"thumb": "../images/service-details/printing/stages/1.png"
+		"thumb": "/images/service-details/printing/stages/1.png"
 	},
 	{
 		"id": 2,
 		"title": "Inventive Work",
 		"stage": "Two",
 		"desc": "Having analyzed, annotated, and sketched down our ideas, we now turn our attention to the computer screen. Ideas come to life at this point in the process. We could come to terms with the fact that it just worked in our minds!",
-		"thumb": "../images/service-details/printing/stages/2.png"
+		"thumb": "/images/service-details/printing/stages/2.png"
 	},
 	{
 		"id": 3,
 		"title": "Feedback",
 		"stage": "Three",
 		"desc": "Succumbing to the thrill of clicking 'submit' on that initial email to the customer with the first design thought or concepts is a terrifying experience. As several of our clients have informed us, they've been feverishly clearing their inboxes (or altogether bypassing them) to  have a glance at it!",
-		"thumb": "../images/service-details/printing/stages/3.png"
+		"thumb": "/images/service-details/printing/stages/3.png"
 	},
 	{
 		"id": 4,
 		"title": "Artwork completion",
 		"stage": "Three",
 		"desc": "We send the customer a sign-off form after they are satisfied and – ideally – impressed. Using this checklist, you can ensure that your design is precisely what you want it to be. Our final artwork may begin now that the sign-off paperwork has been completed! <br /> Send us the contact information for your preferred printer, and we'll send print designs and instructions to them. <b>Request a Quote or contact us if you are interested in any of our print design work.</b>",
-		"thumb": "../images/service-details/printing/stages/4.png"
+		"thumb": "/images/service-details/printing/stages/4.png"
 	}
 ]

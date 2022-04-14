@@ -13,7 +13,7 @@ const Video = () => {
 	}
 	return (
 		<section className='cre_video_popup_section pt_5 wow fadeInUp'>
-			<ModalVideo
+			{/* <ModalVideo
 				channel='youtube'
 				autoplay
 				isOpen={isOpen}
@@ -36,6 +36,21 @@ const Video = () => {
 								<i className='fas fa-play'></i>
 							</button>
 						</div>
+					</div>
+				</div>
+			</div> */}
+			<div className='container'>
+				<div className='row'>
+					<div className='col'>
+						<iframe
+							width='100%'
+							height='800'
+							src='https://www.youtube.com/embed/UBil3MFK8wY'
+							title='YouTube video player'
+							frameBorder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowFullScreen
+						></iframe>
 					</div>
 				</div>
 			</div>

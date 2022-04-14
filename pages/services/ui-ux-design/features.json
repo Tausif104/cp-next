@@ -1,31 +1,31 @@
 [
 	{
 		"id": 1,
-		"img": "../images/service-details/ui-design/feature-icons/1.png",
+		"img": "/images/service-details/ui-design/feature-icons/1.png",
 		"title": "Great UX",
 		"desc": "We implement a great UX strategy as a road map outlining the specifics of how your design will operate. Also, wireframes serve as a visual representation of our UX strategy. Your product vision is aligned with the demands of your customers and the product's technical capabilities by these consultants."
 	},
 	{
 		"id": 2,
-		"img": "../images/service-details/ui-design/feature-icons/2.png",
+		"img": "/images/service-details/ui-design/feature-icons/2.png",
 		"title": "UI Testing",
 		"desc": "To make a fantastic app, we must know our consumers, the environment in which they will use our product, and their requirements. In the beginning stages of user interface design, we will be doing research."
 	},
 	{
 		"id": 3,
-		"img": "../images/service-details/ui-design/feature-icons/3.png",
+		"img": "/images/service-details/ui-design/feature-icons/3.png",
 		"title": "Research for Visual Elements",
 		"desc": "UI design is informed by visual research. To help you build the best possible user interface for your business, we do extensive research on current design trends in your sector and throughout the globe, compiling all of this information into one mood board."
 	},
 	{
 		"id": 4,
-		"img": "../images/service-details/ui-design/feature-icons/4.png",
+		"img": "/images/service-details/ui-design/feature-icons/4.png",
 		"title": "Visual direction",
 		"desc": "Buttons, colors, typography, and icons schemes are part of our user interface design process to ensure that your customers have an easy time navigating your application. The product's design and interaction will be geared at enhancing the user experience."
 	},
 	{
 		"id": 5,
-		"img": "../images/service-details/ui-design/feature-icons/5.png",
+		"img": "/images/service-details/ui-design/feature-icons/5.png",
 		"title": "User-Focused",
 		"desc": "We conduct user interviews as part of our UX research during the idea creation process to help guide our design choices. We conduct user interviews physically or on video conversations to deliver you an amazing product."
 	}

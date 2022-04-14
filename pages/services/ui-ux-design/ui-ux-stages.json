@@ -4,41 +4,41 @@
 		"title": "Understand your customer and their core principles",
 		"stage": "One",
 		"desc": "Designing a new product begins with developing a plan and understanding the fundamentals of product development. This is where we try to learn about your customer's values to tailor your service to their needs.",
-		"thumb": "../images/service-details/ui-design/stages/1.png"
+		"thumb": "/images/service-details/ui-design/stages/1.png"
 	},
 	{
 		"id": 2,
 		"title": "Do some market research",
 		"stage": "Two",
 		"desc": "There will be a further discussion after the initial meeting. It's time for the second step: research, which includes reviewing your product and looking at your rivals and current trends while considering the guidelines that your customer has provided.",
-		"thumb": "../images/service-details/ui-design/stages/2.png"
+		"thumb": "/images/service-details/ui-design/stages/2.png"
 	},
 	{
 		"id": 3,
 		"title": "Sketch up the design of your product",
 		"stage": "Three",
 		"desc": "Sketching is the next phase in our journey. To create a product vision, we use a whiteboard or piece of paper. In addition, we show the low-fidelity prototype to our customers and solicit their feedback. This is a two-way exchange in which an idea is presented, and a response is solicited.",
-		"thumb": "../images/service-details/ui-design/stages/3.png"
+		"thumb": "/images/service-details/ui-design/stages/3.png"
 	},
 	{
 		"id": 4,
 		"title": "Design your product",
 		"stage": "Four",
 		"desc": "When the customer approves our design, we put it into action on the website. The final user experience for online and mobile devices, UX improvements, micro-interactions, and other elements are all part of the fifth phase.",
-		"thumb": "../images/service-details/ui-design/stages/4.png"
+		"thumb": "/images/service-details/ui-design/stages/4.png"
 	},
 	{
 		"id": 5,
 		"title": "Implementation",
 		"stage": "Five",
 		"desc": "When the customer approves our design, we put it into action on the website. The final user experience for online and mobile devices, UX improvements, micro-interactions, and other elements are all part of the fifth phase.",
-		"thumb": "../images/service-details/ui-design/stages/5.png"
+		"thumb": "/images/service-details/ui-design/stages/5.png"
 	},
 	{
 		"id": 6,
 		"title": "Analyze and enhance your work",
 		"stage": "Six",
 		"desc": "This is the final phase in the UX journey. Over time, we revisit our product to see whether it's still functioning effectively and look for areas that may need to be improved.",
-		"thumb": "../images/service-details/ui-design/stages/6.png"
+		"thumb": "/images/service-details/ui-design/stages/6.png"
 	}
 ]

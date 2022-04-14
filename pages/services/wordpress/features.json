@@ -1,37 +1,37 @@
 [
 	{
 		"id": 1,
-		"img": "../images/service-details/wordpress/feature-icons/front-end.png",
+		"img": "/images/service-details/wordpress/feature-icons/front-end.png",
 		"title": "Development of the front-end of the website",
 		"desc": "Our designers have created mockups, logos, banners, landing pages, and other assets for some of the world's most well-known organizations. In addition, we've created a slew of fast, safe, and visually appealing WordPress themes."
 	},
 	{
 		"id": 2,
-		"img": "../images/service-details/wordpress/feature-icons/software.png",
+		"img": "/images/service-details/wordpress/feature-icons/software.png",
 		"title": "Contributions to open-source software",
 		"desc": "Plugins, themes, and the WordPress core all benefit from our efforts. At WordCamps and meetups, our speakers, sponsors, co-organizers, and volunteers participate. They are keeping up with the latest developments in WordPress."
 	},
 	{
 		"id": 3,
-		"img": "../images/service-details/wordpress/feature-icons/promotion.png",
+		"img": "/images/service-details/wordpress/feature-icons/promotion.png",
 		"title": "Promotional Help",
 		"desc": "We also provide social media marketing, content creation, affiliate and mailing marketing, analytics research, and other services."
 	},
 	{
 		"id": 4,
-		"img": "../images/service-details/wordpress/feature-icons/business.png",
+		"img": "/images/service-details/wordpress/feature-icons/business.png",
 		"title": "Consulting and Research for Business",
 		"desc": "When you work with CreativePeoples, you can be confident that we'll look into everything about your business to see how we can better serve you and your customers. Our technical, creative, and marketing initiatives benefit significantly from this new perspective."
 	},
 	{
 		"id": 5,
-		"img": "../images/service-details/wordpress/feature-icons/technical.png",
+		"img": "/images/service-details/wordpress/feature-icons/technical.png",
 		"title": "Technical WordPress Development",
 		"desc": "At CreativePeoples, we construct massive platforms, media websites, multi-site networks, SaaS solutions, and extendable plugins, and many of the WordPress Core contributors also work here. This is the pinnacle of web design."
 	},
 	{
 		"id": 6,
-		"img": "../images/service-details/wordpress/feature-icons/assistance.png",
+		"img": "/images/service-details/wordpress/feature-icons/assistance.png",
 		"title": "Dedicated WordPress Development and Assistance",
 		"desc": "With a focus on WordPress Theme, Plugin, and WordPress Blog and Website Development, we're here to help you with all of your WordPress-related needs."
 	}

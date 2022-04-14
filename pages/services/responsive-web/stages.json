@@ -11,34 +11,34 @@
 		"title": "Architecture Design",
 		"stage": "Two",
 		"desc": "For the design phase, you have a wireframe documenting the locations of your website features, functions, and user route flow.",
-		"thumb": "../images/service-details/responsive/stages/2.png"
+		"thumb": "/images/service-details/responsive/stages/2.png"
 	},
 	{
 		"id": 3,
 		"title": "Implementation",
 		"stage": "Three",
 		"desc": "Once the wireframe is complete, our designer will add color and design to it to be used in development.",
-		"thumb": "../images/service-details/responsive/stages/3.png"
+		"thumb": "/images/service-details/responsive/stages/3.png"
 	},
 	{
 		"id": 4,
 		"title": "Development",
 		"stage": "Four",
 		"desc": "The front-end coding will be done by our professional web developer, who will use the best practices to guarantee that Google and other search engines can index your website better.",
-		"thumb": "../images/service-details/responsive/stages/4.png"
+		"thumb": "/images/service-details/responsive/stages/4.png"
 	},
 	{
 		"id": 5,
 		"title": "Quality Control",
 		"stage": "Five",
 		"desc": "As a result, our professional designers will guarantee that your website loads quickly and is completely responsive.",
-		"thumb": "../images/service-details/responsive/stages/5.png"
+		"thumb": "/images/service-details/responsive/stages/5.png"
 	},
 	{
 		"id": 6,
 		"title": "Demo and Optimization",
 		"stage": "Six",
 		"desc": "Finally, our specialized designer will provide a demo link for inspection following a rigorous testing procedure and launch the website upon your approval",
-		"thumb": "../images/service-details/responsive/stages/6.png"
+		"thumb": "/images/service-details/responsive/stages/6.png"
 	}
 ]
