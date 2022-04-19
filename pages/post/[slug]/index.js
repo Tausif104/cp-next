@@ -18,7 +18,7 @@ const BlogDetails = ({ post }) => {
 
 	const { id, title, content, excerpt, link } = post[0]
 
-	const newContent = content && content.rendered.replaceAll(link + '#', '#')
+	// const newContent = content && content.rendered.replaceAll(link + '#', '#')
 
 	// refs
 	const nameRef = useRef()
