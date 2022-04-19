@@ -246,12 +246,12 @@ export const getServerSideProps = async (context) => {
 	const postsRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
 	)
-	const res = await fetch(
+	const { data } = await axios.get(
 		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?slug=${context.params.slug}&_embed`
 	)
 
 	const posts = await postsRes.json()
-	const post = await res.json()
+	const post = await data
 
 	return { props: { post, posts } }
 }
