@@ -9,7 +9,6 @@ import moment from 'moment'
 import BlogCard from '../../../components/blogPage/BlogCard/BlogCard'
 
 const BlogDetails = ({ post, posts, categories }) => {
-	console.log(post)
 	const [comment, setComment] = useState({})
 	const [comments, setComments] = useState([])
 	const [loading, setLoading] = useState(false)
@@ -19,7 +18,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 
 	const { id, title, content, excerpt, link } = post[0]
 
-	const newContent = content.rendered.replaceAll(link + '#', '#')
+	const newContent = content && content.rendered.replaceAll(link + '#', '#')
 
 	// refs
 	const nameRef = useRef()
