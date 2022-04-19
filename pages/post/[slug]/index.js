@@ -38,29 +38,29 @@ const BlogDetails = ({ post }) => {
 	// 	fetchAllComments()
 	// }, [id, comment])
 
-	const handleCommentForm = async (e) => {
-		setLoading(true)
-		e.preventDefault()
+	// const handleCommentForm = async (e) => {
+	// 	setLoading(true)
+	// 	e.preventDefault()
 
-		const commentObj = {
-			post: id,
-			author_name: nameRef.current.value,
-			author_email: emailRef.current.value,
-			content: commentRef.current.value,
-		}
+	// 	const commentObj = {
+	// 		post: id,
+	// 		author_name: nameRef.current.value,
+	// 		author_email: emailRef.current.value,
+	// 		content: commentRef.current.value,
+	// 	}
 
-		const { data } = await axios.post(
-			'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/comments',
-			commentObj
-		)
+	// 	const { data } = await axios.post(
+	// 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/comments',
+	// 		commentObj
+	// 	)
 
-		setComment(data)
-		setLoading(false)
+	// 	setComment(data)
+	// 	setLoading(false)
 
-		setComments([...comments, comment])
+	// 	setComments([...comments, comment])
 
-		e.target.reset()
-	}
+	// 	e.target.reset()
+	// }
 
 	if (post[0]) {
 		return <h1>{title.rendered}</h1>
