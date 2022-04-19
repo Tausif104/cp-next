@@ -9,6 +9,7 @@ import moment from 'moment'
 import BlogCard from '../../../components/blogPage/BlogCard/BlogCard'
 
 const BlogDetails = ({ post, posts, categories }) => {
+	console.log(post)
 	const [comment, setComment] = useState({})
 	const [comments, setComments] = useState([])
 	const [loading, setLoading] = useState(false)
