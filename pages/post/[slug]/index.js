@@ -242,7 +242,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 }
 
 export const getServerSideProps = async (context) => {
-	const postsRes = await await fetch(
+	const postsRes = await fetch(
 		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
 	)
 	const res = await fetch(
