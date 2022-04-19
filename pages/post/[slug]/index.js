@@ -108,8 +108,8 @@ const BlogDetails = ({ post, posts, categories }) => {
 										</span>
 										<span>
 											<i className='far fa-comments me-2'></i>{' '}
-											{post._embedded?.replies
-												? post._embedded.replies[0]
+											{post[0]._embedded?.replies
+												? post[0]._embedded.replies[0]
 														.length
 												: 0}{' '}
 											Comments
@@ -249,15 +249,11 @@ export const getServerSideProps = async (context) => {
 	const res = await fetch(
 		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?slug=${context.params.slug}&_embed`
 	)
-	const catRes = await fetch(
-		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/categories'
-	)
 
 	const posts = await postsRes.json()
 	const post = await res.json()
-	const categories = await catRes.json()
 
-	return { props: { post, posts, categories } }
+	return { props: { post, posts } }
 }
 
 export default BlogDetails
