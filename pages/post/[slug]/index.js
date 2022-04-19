@@ -123,7 +123,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 										<div
 											className='content'
 											dangerouslySetInnerHTML={{
-												__html: content,
+												__html: content.rendered,
 											}}
 										></div>
 									)}
