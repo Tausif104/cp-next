@@ -77,13 +77,9 @@ const Benefits = () => {
 							</div>
 							<h4>A SECURE SOURCE OF WORK</h4>
 							<p>
-								We are a passionate, open, united workforce that
-								isn&apos;t scared to work hard or take on new
-								challenges. Every employee, regardless of
-								position, is vital to the success of our
-								company. As a full-stack agency, we strive to
-								create a work environment that is both pleasant
-								and productive.
+								As one of the best agency, we strive to create a
+								work environment that is both pleasant and
+								productive.
 							</p>
 						</div>
 					</div>

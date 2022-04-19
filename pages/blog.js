@@ -13,7 +13,6 @@ const Blog = ({ posts }) => {
 			setVisible((prev) => prev + 4)
 		}
 	}
-	console.log(visible, posts.length)
 
 	return (
 		<Layout>
