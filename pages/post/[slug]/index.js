@@ -15,7 +15,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 	const [loading, setLoading] = useState(false)
 
 	const router = useRouter()
-	const slug = router.query
+	const { slug } = router.query
 
 	const { id, title, content, excerpt, link } = post[0]
 
