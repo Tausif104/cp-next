@@ -18,7 +18,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 
 	const { id, title, content, excerpt, link } = post[0]
 
-	// const newContent = content && content.rendered.replaceAll(link + '#', '#')
+	const newContent = content?.rendered.replaceAll(link + '#', '#')
 
 	// refs
 	const nameRef = useRef()
@@ -123,7 +123,7 @@ const BlogDetails = ({ post, posts, categories }) => {
 										<div
 											className='content'
 											dangerouslySetInnerHTML={{
-												__html: content,
+												__html: newContent,
 											}}
 										></div>
 									)}
