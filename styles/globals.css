@@ -6625,3 +6625,36 @@ a.scroll-top:hover {
 		font-size: 25px;
 	}
 }
+
+div#ez-toc-container {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.share-post {
+		position: relative;
+		left: 0;
+		top: 0;
+		transform: unset;
+	}
+
+	.share-post ul {
+		flex-direction: row;
+		border-radius: 5px;
+		overflow: hidden;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	.blog-meta span {
+		display: block;
+		text-align: left;
+		padding-left: 20px;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+
+	.blog-meta span:last-child {
+		margin-bottom: 0;
+	}
+}

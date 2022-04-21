@@ -4,6 +4,7 @@ import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 import BlogListing from '../components/blogPage/BlogListing/BlogListing'
 import Link from 'next/link'
+import trimWords from 'trim-words'
 
 const Blog = ({ posts }) => {
 	const [visible, setVisible] = useState(4)
@@ -76,9 +77,11 @@ const Blog = ({ posts }) => {
 													</h5>
 													<div
 														dangerouslySetInnerHTML={{
-															__html: post.excerpt.rendered.slice(
-																0,
-																50
+															__html: trimWords(
+																post.excerpt
+																	.rendered,
+																5,
+																'...'
 															),
 														}}
 													></div>

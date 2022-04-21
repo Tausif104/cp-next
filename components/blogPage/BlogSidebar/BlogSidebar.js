@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import trimWords from 'trim-words'
 
 const BlogSidebar = ({ post, posts, categories }) => {
 	const { avatar_urls, name, description } = post[0]._embedded.author[0]
@@ -68,9 +69,10 @@ const BlogSidebar = ({ post, posts, categories }) => {
 									</h5>
 									<div
 										dangerouslySetInnerHTML={{
-											__html: post.excerpt.rendered.slice(
-												0,
-												50
+											__html: trimWords(
+												post.excerpt.rendered,
+												5,
+												'...'
 											),
 										}}
 									></div>
