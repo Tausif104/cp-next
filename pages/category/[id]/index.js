@@ -40,7 +40,7 @@ const CategoryPostList = ({ posts, categories, allPosts }) => {
 											<div className='rp-content'>
 												<h5>
 													<Link
-														href={`/post/${post.slug}`}
+														href={`/${post.slug}`}
 													>
 														{post.title.rendered}
 													</Link>
@@ -81,13 +81,13 @@ const CategoryPostList = ({ posts, categories, allPosts }) => {
 
 export const getServerSideProps = async (context) => {
 	const allPostsRes = await fetch(
-		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?_embed'
+		'https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed'
 	)
 	const res = await fetch(
-		`https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/posts?categories=${context.params.id}&_embed`
+		`https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?categories=${context.params.id}&_embed`
 	)
 	const catRes = await fetch(
-		'https://creativepeoples.xyz/projects/cp-next-admin/wp-json/wp/v2/categories'
+		'https://creativepeoplesdesign.com/admin/wp-json/wp/v2/categories'
 	)
 
 	const posts = await res.json()

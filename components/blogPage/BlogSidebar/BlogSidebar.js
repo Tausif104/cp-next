@@ -4,6 +4,8 @@ import trimWords from 'trim-words'
 const BlogSidebar = ({ post, posts, categories }) => {
 	const { avatar_urls, name, description } = post[0]._embedded.author[0]
 
+	console.log(post[0])
+
 	return (
 		<aside>
 			<div className='share-post'>
@@ -59,7 +61,7 @@ const BlogSidebar = ({ post, posts, categories }) => {
 								)}
 								<div className='rp-content'>
 									<h5>
-										<Link href={`/post/${post.slug}`}>
+										<Link href={`/${post.slug}`}>
 											<a
 												dangerouslySetInnerHTML={{
 													__html: post.title.rendered,

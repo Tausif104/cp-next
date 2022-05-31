@@ -6,7 +6,7 @@ const BlogCard = ({ post, column }) => {
 		<div className={`col-lg-${column === 2 ? '6' : '4'}`}>
 			<div className='blog-post-card'>
 				{post.x_featured_media_original && (
-					<Link href={`/post/${post.slug}`}>
+					<Link href={`/${post.slug}`}>
 						<a>
 							<img
 								className='img-fluid'
@@ -17,7 +17,7 @@ const BlogCard = ({ post, column }) => {
 					</Link>
 				)}
 				<div className='blog-post-text'>
-					<Link href={`/post/${post.slug}`}>
+					<Link href={`/${post.slug}`}>
 						<h3
 							dangerouslySetInnerHTML={{
 								__html: post.title.rendered,
@@ -53,7 +53,7 @@ const BlogCard = ({ post, column }) => {
 							__html: post.excerpt.rendered,
 						}}
 					></div>
-					<Link href={`/post/${post.slug}`}>
+					<Link href={`/${post.slug}`}>
 						<a className='inline-btn'>
 							Read More <i className='fas fa-angle-right'></i>
 						</a>

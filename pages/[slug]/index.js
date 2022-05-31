@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef, useState, useEffect } from 'react'
-import BlogSidebar from '../../../components/blogPage/BlogSidebar/BlogSidebar'
-import Layout from '../../../components/shared/Layout/Layout'
+import BlogSidebar from '../../components/blogPage/BlogSidebar/BlogSidebar'
+import Layout from '../../components/shared/Layout/Layout'
 import axios from 'axios'
 import moment from 'moment'
-import BlogCard from '../../../components/blogPage/BlogCard/BlogCard'
+import BlogCard from '../../components/blogPage/BlogCard/BlogCard'
 
 const BlogDetails = ({ post, posts, categories }) => {
 	const [comment, setComment] = useState({})
