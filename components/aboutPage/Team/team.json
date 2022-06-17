@@ -1,128 +1,134 @@
 [
-	{
-		"id": 1,
-		"image": "/images/team/bappa.png",
-		"name": "A.H. Bappa",
-		"designation": "Founder & CEO"
-	},
-	{
-		"id": 2,
-		"image": "/images/team/saiful.png",
-		"name": "Saiful Islam",
-		"designation": "Co-Founder & COO"
-	},
-	{
-		"id": 3,
-		"image": "/images/team/munna.png",
-		"name": "Mokhlesur Rahman",
-		"designation": "Co-Founder & CTO"
-	},
-	{
-		"id": 4,
-		"image": "/images/team/robiul.png",
-		"name": "Robiul Islam",
-		"designation": "Design Lead"
-	},
-	{
-		"id": 5,
-		"image": "/images/team/sumon.png",
-		"name": "Shadakin Islam",
-		"designation": "Senior UI/UX Designer"
-	},
-	{
-		"id": 6,
-		"image": "/images/team/porosh.png",
-		"name": "Porosh Ahammed",
-		"designation": "Senior Wordpress Developer"
-	},
-	{
-		"id": 7,
-		"image": "/images/team/tausif.png",
-		"name": "Tausif Ahmed",
-		"designation": "Wordpress Developer"
-	},
-	{
-		"id": 8,
-		"image": "/images/team/masum.png",
-		"name": "Mohammad-Masum",
-		"designation": "Front-end Developer"
-	},
-	{
-		"id": 9,
-		"image": "/images/team/munna-2.png",
-		"name": "Azim Munna",
-		"designation": "Front-end Developer"
-	},
-	{
-		"id": 10,
-		"image": "/images/team/polash.png",
-		"name": "Palash Chandra",
-		"designation": "Wordpress Developer"
-	},
-	{
-		"id": 11,
-		"image": "/images/team/nazmul.png",
-		"name": "Syed Nazmul Hasan",
-		"designation": "Wordpress Developer"
-	},
-	{
-		"id": 12,
-		"image": "/images/team/ridoy.png",
-		"name": "Abu Saleh Ridoy",
-		"designation": "Front-end Developer"
-	},
-	{
-		"id": 13,
-		"image": "/images/team/masud.png",
-		"name": "Abdullah Al Masud",
-		"designation": "SEO Specialist"
-	},
-	{
-		"id": 14,
-		"image": "/images/team/jilon.png",
-		"name": "Abid Hasan Jilon",
-		"designation": "Senior UI/UX Designer"
-	},
-	{
-		"id": 15,
-		"image": "/images/team/khalid.png",
-		"name": "Md Khalid Hasan",
-		"designation": "UI/UX Designer"
-	},
-	{
-		"id": 16,
-		"image": "/images/team/shahin.png",
-		"name": "Shahinul Islam",
-		"designation": "Affiliate Marketer"
-	},
-	{
-		"id": 17,
-		"image": "/images/team/torikul.png",
-		"name": "Tariqul Islam",
-		"designation": "UI/UX Designer"
-	},
-	{
-		"id": 18,
-		"image": "/images/team/zahidul.png",
-		"name": "Md Zahidul Islam",
-		"designation": "UI/UX Designer"
-	},
-	{
-		"id": 19,
-		"image": "/images/team/kabir.png",
-		"name": "Mahmudul Kabir",
-		"designation": "Content Manager"
-	},
-	{
-		"id": 20,
-		"image": "/images/team/nur-alam.png",
-		"name": "Md Nur Alam",
-		"designation": "Front-end Developer"
-	},
-	{
-		"id": 21,
-		"image": "/images/team/sharon.jpg",
-		"name": "Sharon Ahmed",
-		"designation": "UI/UX Designer "
-	}
+  {
+    "id": 1,
+    "image": "/images/team/bappa.png",
+    "name": "A.H. Bappa",
+    "designation": "Founder & CEO"
+  },
+  {
+    "id": 2,
+    "image": "/images/team/saiful.png",
+    "name": "Saiful Islam",
+    "designation": "Co-Founder & COO"
+  },
+  {
+    "id": 3,
+    "image": "/images/team/munna.png",
+    "name": "Mokhlesur Rahman",
+    "designation": "Co-Founder & CTO"
+  },
+  {
+    "id": 4,
+    "image": "/images/team/robiul.png",
+    "name": "Robiul Islam",
+    "designation": "Design Lead"
+  },
+  {
+    "id": 6,
+    "image": "/images/team/porosh.png",
+    "name": "Porosh Ahammed",
+    "designation": "Senior Wordpress Developer"
+  },
+  {
+    "id": 7,
+    "image": "/images/team/tausif.png",
+    "name": "Tausif Ahmed",
+    "designation": "Wordpress Developer"
+  },
+  {
+    "id": 8,
+    "image": "/images/team/masum.png",
+    "name": "Mohammad-Masum",
+    "designation": "Front-end Developer"
+  },
+  {
+    "id": 9,
+    "image": "/images/team/munna-2.png",
+    "name": "Azim Munna",
+    "designation": "Front-end Developer"
+  },
+  {
+    "id": 10,
+    "image": "/images/team/polash.png",
+    "name": "Palash Chandra",
+    "designation": "Wordpress Developer"
+  },
+  {
+    "id": 11,
+    "image": "/images/team/nazmul.png",
+    "name": "Syed Nazmul Hasan",
+    "designation": "Wordpress Developer"
+  },
+  {
+    "id": 12,
+    "image": "/images/team/ridoy.png",
+    "name": "Abu Saleh Ridoy",
+    "designation": "Front-end Developer"
+  },
+  {
+    "id": 13,
+    "image": "/images/team/masud.png",
+    "name": "Abdullah Al Masud",
+    "designation": "SEO Specialist"
+  },
+  {
+    "id": 14,
+    "image": "/images/team/jilon.png",
+    "name": "Abid Hasan Jilon",
+    "designation": "Senior UI/UX Designer"
+  },
+  {
+    "id": 15,
+    "image": "/images/team/khalid.png",
+    "name": "Md Khalid Hasan",
+    "designation": "UI/UX Designer"
+  },
+  {
+    "id": 16,
+    "image": "/images/team/shahin.png",
+    "name": "Shahinul Islam",
+    "designation": "Affiliate Marketer"
+  },
+  {
+    "id": 18,
+    "image": "/images/team/zahidul.png",
+    "name": "Md Zahidul Islam",
+    "designation": "UI/UX Designer"
+  },
+  {
+    "id": 19,
+    "image": "/images/team/kabir.png",
+    "name": "Mahmudul Kabir",
+    "designation": "Content Manager"
+  },
+  {
+    "id": 20,
+    "image": "/images/team/nur-alam.png",
+    "name": "Md Nur Alam",
+    "designation": "Front-end Developer"
+  },
+  {
+    "id": 21,
+    "image": "/images/team/sharon.jpg",
+    "name": "Sharon Ahmed",
+    "designation": "UI/UX Designer "
+  },
+  {
+    "id": 22,
+    "image": "/images/team/nazmul-two.png",
+    "name": "MD. Nazmul Hassan",
+    "designation": "UI/UX Designer "
+  },
+  {
+    "id": 23,
+    "image": "/images/team/hossain.png",
+    "name": "Sharon Ahmed",
+    "designation": "UI/UX Designer "
+  },
+  {
+    "id": 24,
+    "image": "/images/team/rahat.png",
+    "name": "Rahat Nur",
+    "designation": "UI/UX Designer "
+  }
 ]

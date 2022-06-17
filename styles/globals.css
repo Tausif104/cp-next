@@ -6794,3 +6794,33 @@ section.apply-form textarea {
     padding: 50px 0;
   }
 }
+
+.cre_team_member_wrapper .team_member_img img {
+  height: 247px;
+  object-fit: contain;
+}
+
+.cre_team_member_wrapper .team_member_img img {
+  filter: drop-shadow(2px 4px 13px #eee);
+}
+
+.cre_team_member_wrapper .team_member_img img {
+  background-color: unset !important;
+}
+
+.cre_team_member_wrapper .team_member_img img {
+  background-color: unset !important;
+}
+
+.cre_team_member_wrapper .team_member_img {
+  margin-bottom: 5px;
+}
+
+.cre_team_member_wrapper .name {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+p.position {
+  font-size: 18px !important;
+}
