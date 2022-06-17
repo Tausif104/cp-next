@@ -1,0 +1,6 @@
+Sitemap: https://creativepeoplesdesign.com/api/my-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
