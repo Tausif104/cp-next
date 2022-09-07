@@ -19,7 +19,6 @@ const BlogDetails = ({ post, posts, categories }) => {
   const { id, title, content, excerpt, link } = post[0]
 
   // const newContent = content?.rendered.replaceAll(link + '#', '#')
-  console.log(title)
 
   // refs
   const nameRef = useRef()

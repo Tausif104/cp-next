@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import trimWords from 'trim-words'
+import axios from 'axios'
 
-const BlogSidebar = ({ post, posts, categories }) => {
-  const { avatar_urls, name, description } = post[0]._embedded.author[0]
+const BlogSidebar = ({ blogs, loader, blog }) => {
+  const { avatar_urls, name, description } = blog._embedded.author[0]
 
   return (
     <aside>
@@ -10,22 +12,22 @@ const BlogSidebar = ({ post, posts, categories }) => {
         <h3>Share On:</h3>
         <ul>
           <li>
-            <a href={`https://www.facebook.com/sharer.php?u=https://creativepeoplesdesign.com/post/${post[0].slug}`}>
+            <a href={`https://www.facebook.com/sharer.php?u=https://creativepeoplesdesign.com/post/${blog.slug}`}>
               <i className='fab fa-facebook'></i>
             </a>
           </li>
           <li>
-            <a href={`https://twitter.com/share?url=https://creativepeoplesdesign.com/post/${post[0].slug}&text=${post[0].title.rendered}`}>
+            <a href={`https://twitter.com/share?url=https://creativepeoplesdesign.com/post/${blog.slug}&text=${blog.title.rendered}`}>
               <i className='fab fa-twitter'></i>
             </a>
           </li>
           <li>
-            <a href={`https://pinterest.com/pin/create/bookmarklet/?media=${post[0]._embedded['wp:featuredmedia']?.['0'].source_url}&url=https://creativepeoplesdesign.com/post/${post[0].slug}`}>
+            <a href={`https://pinterest.com/pin/create/bookmarklet/?media=${blog._embedded['wp:featuredmedia']?.['0'].source_url}&url=https://creativepeoplesdesign.com/post/${blog.slug}`}>
               <i className='fab fa-pinterest'></i>
             </a>
           </li>
           <li>
-            <a href={`https://www.linkedin.com/shareArticle?url=https://creativepeoplesdesign.com/post/${post[0].slug}&title=${post[0].title.rendered}`}>
+            <a href={`https://www.linkedin.com/shareArticle?url=https://creativepeoplesdesign.com/post/${blog.slug}&title=${blog.title.rendered}`}>
               <i className='fab fa-linkedin-in'></i>
             </a>
           </li>
@@ -40,8 +42,8 @@ const BlogSidebar = ({ post, posts, categories }) => {
       <div className='recent-post'>
         <h4>Recent Posts</h4>
         <div className='recent-posts-list'>
-          {posts &&
-            posts.slice(0, 3).map((post) => (
+          {blogs &&
+            blogs.slice(0, 3).map((post) => (
               <div className='recent-post-item' key={post.id}>
                 {post.x_featured_media_original && <img src={post.x_featured_media_original} alt={post.title.rendered} />}
                 <div className='rp-content'>
