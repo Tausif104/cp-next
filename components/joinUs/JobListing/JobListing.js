@@ -29,9 +29,6 @@ const JobListing = ({ jobs }) => {
                         <span>Job type:</span> {job.x_metadata.type}
                       </li>
                       <li className='d-inline-block fs-6'>
-                        <span>Vacancy:</span> 5
-                      </li>
-                      <li className='d-inline-block fs-6'>
                         <span>Deadline:</span> {job.x_metadata.deadline}
                       </li>
                     </ul>

@@ -10,7 +10,7 @@ const joinus = ({ jobs }) => {
   return (
     <Layout>
       <Head>
-        <title>Join Here To Make Your Dreams Come True</title>
+        <title>Join with the rapidly growing team.</title>
         <meta name='description' content="At CreativePeoples, we're continually looking for new methods to improve the quality of our work. Join here to develop yourself and enjoy the thrill!" />
       </Head>
       <PageBanner title='JOIN US' />

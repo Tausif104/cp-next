@@ -61,43 +61,43 @@ const ApplyForm = () => {
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>First Name</label>
-                      <input onChange={(e) => setFirstName(e.target.value)} type='text' placeholder='First Name' className='form-control' />
+                      <input onChange={(e) => setFirstName(e.target.value)} type='text' placeholder='First Name' className='form-control' required />
                     </div>
                   </Col>
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>Last Name</label>
-                      <input onChange={(e) => setLastName(e.target.value)} type='text' placeholder='Last Name' className='form-control' />
+                      <input onChange={(e) => setLastName(e.target.value)} type='text' placeholder='Last Name' className='form-control' required />
                     </div>
                   </Col>
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>Email</label>
-                      <input onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Email Address' className='form-control' />
+                      <input onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Email Address' className='form-control' required />
                     </div>
                   </Col>
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>Portfolio</label>
-                      <input onChange={(e) => setPortfolio(e.target.value)} type='url' placeholder='Portfolio Link' className='form-control' />
+                      <input onChange={(e) => setPortfolio(e.target.value)} type='text' placeholder='Portfolio Link' className='form-control' />
                     </div>
                   </Col>
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>Phone</label>
-                      <input onChange={(e) => setPhone(e.target.value)} type='tel' placeholder='Phone Number' className='form-control' />
+                      <input onChange={(e) => setPhone(e.target.value)} type='tel' placeholder='Phone Number' className='form-control' required />
                     </div>
                   </Col>
                   <Col md={4}>
                     <div className='form-group'>
                       <label htmlFor=''>Resume</label>
-                      <input onChange={(e) => setResume(e.target.files[0])} type='file' placeholder='Resume' className='form-control' />
+                      <input onChange={(e) => setResume(e.target.files[0])} type='file' placeholder='Resume' className='form-control' required />
                     </div>
                   </Col>
                   <Col md={12}>
                     <div className='form-group'>
                       <label htmlFor=''>Write about yourself</label>
-                      <textarea onChange={(e) => setAbout(e.target.value)} className='form-control' placeholder='Tell us about yourself in few lines'></textarea>
+                      <textarea onChange={(e) => setAbout(e.target.value)} className='form-control' placeholder='Tell us about yourself in few lines' required></textarea>
                     </div>
                   </Col>
                   <Col md={12} className='text-center'>
