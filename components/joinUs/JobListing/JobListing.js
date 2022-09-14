@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const JobListing = ({ jobs }) => {
   return (
-    <section className='cre_section section_padding position-relative'>
+    <section className='cre_section section_padding position-relative' id='open_job_positions'>
       <div className='container custom_container'>
         <div className='row justify-content-between mb_80'>
           <div className='col-lg-12 text-center wow fadeInUp'>
