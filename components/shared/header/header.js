@@ -167,7 +167,7 @@ const Header = () => {
                 <Link href='/reviews'>Reviews</Link>
               </li>
               <li>
-                <Link href='/joinus/#open_job_positions'>Join Us</Link>
+                <Link href='/joinus/#open-job-positions'>Join Us</Link>
               </li>
               <li>
                 <Link href='/contact'>Contact Us</Link>
@@ -297,7 +297,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href='/joinus/#open_job_positions'>
+                <Link href='/joinus/#open-job-positions'>
                   <a className={router.pathname === '/joinus' ? 'active' : ''}>Join Us</a>
                 </Link>
               </li>

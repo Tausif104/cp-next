@@ -4,6 +4,7 @@ import PageBanner from '../components/shared/PageBanner/PageBanner'
 import Benefits from '../components/joinUs/Benefits/Benefits'
 import Video from '../components/joinUs/Video/Video'
 import JobListing from '../components/joinUs/JobListing/JobListing'
+import ogImage from '../public/meta/join-us-og.jpg'
 import axios from 'axios'
 
 const joinus = ({ jobs }) => {
@@ -12,6 +13,7 @@ const joinus = ({ jobs }) => {
       <Head>
         <title>Join with the rapidly growing team.</title>
         <meta name='description' content="At CreativePeoples, we're continually looking for new methods to improve the quality of our work. Join here to develop yourself and enjoy the thrill!" />
+        <meta property='og:image' content={ogImage.src} />
       </Head>
       <PageBanner title='JOIN US' />
       <Benefits />
