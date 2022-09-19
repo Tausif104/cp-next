@@ -6,7 +6,6 @@ import Layout from '../components/shared/Layout/Layout'
 import PageBanner from '../components/shared/PageBanner/PageBanner'
 
 const projects = ({ projects, links }) => {
-  console.log(links)
   return (
     <Layout>
       <Head>
