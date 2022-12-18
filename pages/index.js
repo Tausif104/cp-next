@@ -40,7 +40,7 @@ export default function Home({ posts }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
+  const res = await fetch('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
   const posts = await res.json()
 
   return { props: { posts } }

@@ -72,8 +72,8 @@ const Blog = ({ posts }) => {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?per_page=100&&_embed')
-  const catRes = await fetch('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/categories')
+  const res = await fetch('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?per_page=100&&_embed')
+  const catRes = await fetch('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/categories')
   const posts = await res.json()
   const categories = await catRes.json()
 

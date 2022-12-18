@@ -28,7 +28,7 @@ const ApplyForm = () => {
     formData.append('about', about)
 
     e.target.reset()
-    const { data } = await axios.post('https://creativepeoplesdesign.com/admin/wp-json/contact-form-7/v1/contact-forms/199/feedback', formData)
+    const { data } = await axios.post('http://creativepeoplesdesign.com/admin/wp-json/contact-form-7/v1/contact-forms/199/feedback', formData)
 
     setLoading(false)
 

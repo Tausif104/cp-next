@@ -9,7 +9,7 @@ export default async (req, res) => {
     })
 
     // List of posts
-    const { data } = await axios.get('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
+    const { data } = await axios.get('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
 
     // Create each URL row
     data.forEach((post) => {

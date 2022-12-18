@@ -28,7 +28,7 @@ const BlogDetails = ({ post, posts, categories }) => {
   useEffect(() => {
     setLoading(true)
     const fetchAllComments = async () => {
-      const { data } = await axios(`https://creativepeoplesdesign.com/admin/wp-json/wp/v2/comments?post=${id}`)
+      const { data } = await axios(`http://creativepeoplesdesign.com/admin/wp-json/wp/v2/comments?post=${id}`)
       setComments(data)
       setLoading(false)
     }
@@ -47,7 +47,7 @@ const BlogDetails = ({ post, posts, categories }) => {
       content: commentRef.current.value,
     }
 
-    const { data } = await axios.post('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/comments', commentObj)
+    const { data } = await axios.post('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/comments', commentObj)
 
     setComment(data)
     setLoading(false)
@@ -165,8 +165,8 @@ const BlogDetails = ({ post, posts, categories }) => {
 }
 
 export const getServerSideProps = async (params) => {
-  const postsRes = await fetch('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
-  const { data } = await axios.get(`https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?slug=${params.slug}&_embed`)
+  const postsRes = await fetch('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
+  const { data } = await axios.get(`http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?slug=${params.slug}&_embed`)
   const posts = await postsRes.json()
   const post = await data
 

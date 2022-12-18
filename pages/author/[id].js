@@ -51,7 +51,7 @@ const AuthorPosts = ({ posts, allPosts }) => {
 }
 
 export const getStaticPaths = async () => {
-  const { data } = await axios.get('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
+  const { data } = await axios.get('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
 
   const paths = data.map((post) => {
     return {
@@ -68,8 +68,8 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const allPostsRes = await fetch('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
-  const res = await fetch(`https://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?author=${params.id}&_embed`)
+  const allPostsRes = await fetch('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?_embed')
+  const res = await fetch(`http://creativepeoplesdesign.com/admin/wp-json/wp/v2/posts?author=${params.id}&_embed`)
 
   const posts = await res.json()
   const allPosts = await allPostsRes.json()

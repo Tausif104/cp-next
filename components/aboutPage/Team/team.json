@@ -12,24 +12,6 @@
     "designation": "Co-Founder & COO"
   },
   {
-    "id": 3,
-    "image": "/images/team/munna.png",
-    "name": "Mokhlesur Rahman",
-    "designation": "Co-Founder & CTO"
-  },
-  {
-    "id": 4,
-    "image": "/images/team/robiul.png",
-    "name": "Robiul Islam",
-    "designation": "Design Lead"
-  },
-  {
-    "id": 5,
-    "image": "/images/team/porosh.png",
-    "name": "Porosh Ahammed",
-    "designation": "Senior Wordpress Developer"
-  },
-  {
     "id": 6,
     "image": "/images/team/tausif.png",
     "name": "Tausif Ahmed",
@@ -39,12 +21,6 @@
     "id": 7,
     "image": "/images/team/masum.png",
     "name": "Mohammad-Masum",
-    "designation": "Front-end Developer"
-  },
-  {
-    "id": 8,
-    "image": "/images/team/munna-2.png",
-    "name": "Azim Munna",
     "designation": "Front-end Developer"
   },
   {
@@ -58,12 +34,6 @@
     "image": "/images/team/nazmul.png",
     "name": "Syed Nazmul Hasan",
     "designation": "Wordpress Developer"
-  },
-  {
-    "id": 11,
-    "image": "/images/team/ridoy.png",
-    "name": "Abu Saleh Ridoy",
-    "designation": "Front-end Developer"
   },
   {
     "id": 12,
@@ -96,12 +66,6 @@
     "designation": "Content Manager"
   },
   {
-    "id": 17,
-    "image": "/images/team/nur-alam.png",
-    "name": "Md Nur Alam",
-    "designation": "Front-end Developer"
-  },
-  {
     "id": 18,
     "image": "/images/team/sharon.png",
     "name": "Sharon Ahmed",
@@ -110,7 +74,7 @@
   {
     "id": 19,
     "image": "/images/team/hossain.png",
-    "name": "Sharon Ahmed",
+    "name": "Hossen Rahman",
     "designation": "UI/UX Designer "
   },
   {

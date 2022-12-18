@@ -24,7 +24,7 @@ const joinus = ({ jobs }) => {
 }
 
 export async function getServerSideProps() {
-  const { data: jobs } = await axios.get('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/job?_embed')
+  const { data: jobs } = await axios.get('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/job?_embed')
 
   return { props: { jobs } }
 }

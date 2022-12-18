@@ -22,7 +22,7 @@ const projects = ({ projects, links }) => {
 export async function getStaticProps() {
   const { data: projects } = await axios.get('https://api.dribbble.com/v2/user/shots?access_token=1d41a60e6a59faef44cabd36abcf7003292ec9a0a49fc2db833e2c537bcb86b5')
 
-  const { data: links } = await axios.get('https://creativepeoplesdesign.com/admin/wp-json/wp/v2/link?per_page=100&&_embed')
+  const { data: links } = await axios.get('http://creativepeoplesdesign.com/admin/wp-json/wp/v2/link?per_page=100&&_embed')
 
   return { props: { projects, links }, revalidate: 10 }
 }
